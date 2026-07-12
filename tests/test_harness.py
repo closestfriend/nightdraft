@@ -34,6 +34,7 @@ class MockOllama:
     def __init__(self):
         self.calls = []
         self.fail_models = set()
+        self.malformed_verdict = False
 
     def chat(self, model, messages, schema=None, tools=None, **kw):
         self.calls.append({"model": model, "tools": bool(tools), "schema": bool(schema)})
@@ -59,6 +60,8 @@ class MockOllama:
             raise OllamaError("mock failure")
         props = schema.get("properties", {})
         if "consistent" in props:
+            if self.malformed_verdict:
+                return {}  # the shape that killed the first smoke test
             return {"consistent": True, "violations": []}
         if "scene_summary" in props:
             return {
@@ -145,6 +148,14 @@ class TestLoop(unittest.TestCase):
             self.assertIn("draft_complete", steps)
             # a second invocation is a no-op, not a rewrite
             self.assertEqual(run_loop(run, client=client), 0)
+
+    def test_malformed_verdict_does_not_crash(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            run = make_run(tmp)
+            client = MockOllama()
+            client.malformed_verdict = True  # returns {} for the verdict schema
+            data = write_scene(run, client, run.beats()[0])
+            self.assertFalse(data["flag"])  # empty verdict = no violations found
 
     def test_glue_failure_flags_but_continues(self):
         with tempfile.TemporaryDirectory() as tmp:

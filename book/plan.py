@@ -8,6 +8,10 @@ from .state import Run
 
 
 def plan(run: Run, client: Ollama | None = None):
+    if run.accepted_scene_ids():
+        raise RuntimeError(
+            "refusing to re-plan: scenes already written (edit outline.json directly to steer)"
+        )
     cfg = run.config
     client = client or Ollama(cfg["host"], timeout=cfg["request_timeout_s"])
     glue = cfg["glue_model"]
