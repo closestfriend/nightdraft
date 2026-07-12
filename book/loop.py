@@ -40,6 +40,18 @@ def bible_slice(run: Run, beat: Beat, max_chars: int = 4000) -> str:
     return "\n".join(out) or "(no canon yet)"
 
 
+def normalize_verdict(raw: dict) -> dict:
+    """Model output is untrusted input: coerce a verdict into the exact shape
+    the loop indexes, whatever the model actually returned."""
+    violations = []
+    for v in raw.get("violations") or []:
+        if isinstance(v, dict) and v.get("what"):
+            violations.append(
+                {"what": str(v["what"]), "severity": "major" if v.get("severity") == "major" else "minor"}
+            )
+    return {"consistent": bool(raw.get("consistent", True)), "violations": violations}
+
+
 def consistency_check(run: Run, client: Ollama, scene_prose: str, slice_text: str) -> dict:
     """Glue model investigates with tools (capped), then delivers a verdict."""
     cfg = run.config
@@ -117,13 +129,13 @@ def write_scene(run: Run, client: Ollama, beat: Beat) -> dict:
     # consistency check + at most one revision pass
     verdict = {"consistent": True, "violations": []}
     try:
-        verdict = consistency_check(run, client, prose, slice_text)
+        verdict = normalize_verdict(consistency_check(run, client, prose, slice_text))
         majors = [v for v in verdict["violations"] if v["severity"] == "major"]
         if majors:
             notes = "\n".join(f"- {v['what']}" for v in majors)
             run.log("scene_revising", {"scene_id": beat.id, "violations": notes})
             prose = generate(revision_notes=notes) or prose
-            verdict = consistency_check(run, client, prose, slice_text)
+            verdict = normalize_verdict(consistency_check(run, client, prose, slice_text))
             if any(v["severity"] == "major" for v in verdict["violations"]):
                 flags.append("unresolved_canon_violation")
     except OllamaError as e:
@@ -204,8 +216,10 @@ def drift_check(run: Run, client: Ollama, current_chapter: int):
         run.log("drift_check_failed", {"chapter": current_chapter, "error": str(e), "flag": True})
         return
 
+    on_course = bool(result.get("on_course", True))
+    revised_beats = [r for r in result.get("revised_beats") or [] if isinstance(r, dict)]
     applied = []
-    if not result["on_course"] and result["revised_beats"]:
+    if not on_course and revised_beats:
         outline = run.outline()
         by_id = {b.id: b for b in remaining}
         chapter_n = 0
@@ -214,8 +228,8 @@ def drift_check(run: Run, client: Ollama, current_chapter: int):
                 chapter_n += 1
                 for i, scene in enumerate(chapter["scenes"], start=1):
                     sid = f"c{chapter_n:02d}s{i:02d}"
-                    for rev in result["revised_beats"]:
-                        if rev["scene_id"] == sid and sid in by_id:  # upcoming only
+                    for rev in revised_beats:
+                        if rev.get("scene_id") == sid and rev.get("new_beat") and sid in by_id:  # upcoming only
                             scene["beat"] = rev["new_beat"]
                             applied.append(sid)
         if applied:
@@ -224,10 +238,10 @@ def drift_check(run: Run, client: Ollama, current_chapter: int):
         "drift_check",
         {
             "chapter": current_chapter,
-            "on_course": result["on_course"],
-            "diagnosis": result["diagnosis"],
+            "on_course": on_course,
+            "diagnosis": result.get("diagnosis", ""),
             "beats_revised": applied,
-            "flag": not result["on_course"],
+            "flag": not on_course,
         },
     )
 
@@ -248,9 +262,11 @@ def run_loop(run: Run, client: Ollama | None = None, max_scenes: int | None = No
             return written
         try:
             data = write_scene(run, client, beat)
-        except OllamaError as e:
-            # scene-level catch: skip + flag + move on, never die
-            run.log("scene_failed", {"scene_id": beat.id, "error": str(e), "flag": True})
+        except Exception as e:
+            # scene-level catch: skip + flag + move on, never die overnight.
+            # Deliberately broad — a code bug flags every scene and ruins one
+            # night, not the machine's trust; the morning flags tell the story.
+            run.log("scene_failed", {"scene_id": beat.id, "error": f"{type(e).__name__}: {e}", "flag": True})
             run.write_scene(beat, f"[SCENE FAILED: {beat.beat}]")
             run.log("scene_accepted", {"scene_id": beat.id, "flag": True, "flags": ["generation_failed"]})
             written += 1
