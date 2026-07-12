@@ -26,6 +26,7 @@ def plan(run: Run, client: Ollama | None = None):
         prompts.bible_seed_prompt(run.premise, json.dumps(outline, indent=2)),
         schema=prompts.BIBLE_SEED_SCHEMA,
         temperature=cfg["glue_temperature"],
+        think=cfg.get("glue_think"),
         num_ctx=cfg["num_ctx"],
     )
     merged = run.merge_facts(seed.get("facts", []), scene_id="seed")

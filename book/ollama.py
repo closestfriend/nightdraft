@@ -73,9 +73,15 @@ class Ollama:
         temperature: float = 0.2,
         num_ctx: int = 8192,
         retries: int = 3,
+        think: bool | None = None,
     ) -> dict:
         """One chat call. Returns the response `message` dict
         ({role, content, [tool_calls]}). Retries transport errors with backoff.
+
+        think=False disables hidden reasoning on thinking-capable models — without
+        it, qwen3.5:4b spent 2m16s of chain-of-thought on a one-word answer
+        (measured 2026-07-12; the June image-renamer trap, same shape). Only send
+        the key for models that support thinking: Ollama 400s otherwise.
         """
         payload = {
             "model": model,
@@ -83,6 +89,8 @@ class Ollama:
             "stream": False,
             "options": {"temperature": temperature, "num_ctx": num_ctx},
         }
+        if think is not None:
+            payload["think"] = think
         if schema is not None:
             payload["format"] = schema
         if tools is not None:
