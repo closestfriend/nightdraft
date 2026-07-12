@@ -29,8 +29,12 @@ output — July 2026 small models do this reliably (Qwen3.5 4B: 97.5% on tool-ca
 | Glue: outline, extraction, summaries, checks | `qwen3.5:4b` (~3.4 GB) | near-perfect tool calls, ~2× CPU speed |
 | Prose: the actual scenes | 7–8B instruct, Q4 (~5 GB) | 4B prose is too thin; benchmark 2–3 candidates |
 
-Rules learned the hard way (June image-renamer session): use **instruct** tags, never
-thinking variants (`think:false` was silently ignored on Ollama 0.30.x); benchmark
+Rules learned the hard way (June image-renamer session, re-confirmed 2026-07-12):
+thinking variants stall batch work — `qwen3.5:4b` spent **2m16s** of hidden reasoning
+on a one-word schema answer; with `think:false` the same call took **4s**. Unlike
+June's Ollama 0.30.x, the toggle is honored now, so the harness sends it on every
+glue call (`glue_think` config key; set to `null` for non-thinking glue models,
+since Ollama rejects the key on models without the capability). Also: benchmark
 through Ollama itself, not leaderboards (chat-template mismatches sank purpose-built
 tool models); **never run concurrent jobs** on the box; measure tok/s on the actual
 host before committing. `brie7b` is a drop-in prose candidate for a later run.

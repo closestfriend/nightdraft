@@ -14,6 +14,7 @@ from pathlib import Path
 DEFAULT_CONFIG = {
     "host": None,  # None -> $OLLAMA_HOST or localhost
     "glue_model": "qwen3.5:4b",
+    "glue_think": False,  # None = don't send the key (for non-thinking glue models)
     "prose_model": "brie7b:latest",
     "scene_words": 900,
     "chapters": 12,

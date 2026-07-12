@@ -51,6 +51,7 @@ def consistency_check(run: Run, client: Ollama, scene_prose: str, slice_text: st
             messages,
             tools=prompts.CHECK_TOOLS,
             temperature=cfg["glue_temperature"],
+            think=cfg.get("glue_think"),
             num_ctx=cfg["num_ctx"],
         )
         tool_calls = msg.get("tool_calls") or []
@@ -82,6 +83,7 @@ def consistency_check(run: Run, client: Ollama, scene_prose: str, slice_text: st
         messages,
         schema=prompts.VERDICT_SCHEMA,
         temperature=cfg["glue_temperature"],
+        think=cfg.get("glue_think"),
         num_ctx=cfg["num_ctx"],
     )
 
@@ -135,6 +137,7 @@ def write_scene(run: Run, client: Ollama, beat: Beat) -> dict:
             prompts.extract_prompt(prose),
             schema=prompts.EXTRACT_SCHEMA,
             temperature=cfg["glue_temperature"],
+            think=cfg.get("glue_think"),
             num_ctx=cfg["num_ctx"],
         )
         run.merge_facts(extraction.get("facts", []), beat.id)
@@ -167,6 +170,7 @@ def end_of_chapter(run: Run, client: Ollama, beat: Beat):
             cfg["glue_model"],
             prompts.compress_prompt(bullets),
             temperature=cfg["glue_temperature"],
+            think=cfg.get("glue_think"),
             num_ctx=cfg["num_ctx"],
         )
         paragraph = (msg.get("content") or "").strip()
@@ -193,6 +197,7 @@ def drift_check(run: Run, client: Ollama, current_chapter: int):
             ),
             schema=prompts.DRIFT_SCHEMA,
             temperature=cfg["glue_temperature"],
+            think=cfg.get("glue_think"),
             num_ctx=cfg["num_ctx"],
         )
     except OllamaError as e:
