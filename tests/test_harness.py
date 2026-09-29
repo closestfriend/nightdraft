@@ -166,16 +166,51 @@ class TestLoop(unittest.TestCase):
             self.assertTrue(data["flag"])
             self.assertTrue(run.scene_path(run.beats()[0]).exists())
 
-    def test_prose_failure_skips_and_resumes(self):
+    def test_unexpected_scene_error_skips_and_continues(self):
+        # A code bug inside one scene (not a model outage) must cost one flagged
+        # placeholder, never the night: the deliberate broad catch in run_loop.
+        class BuggyProse(MockOllama):
+            def chat(self, model, messages, **kw):
+                if model == "brie7b:latest":
+                    raise ValueError("bug while handling this scene")
+                return super().chat(model, messages, **kw)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            run = make_run(tmp)
+            n = run_loop(run, client=BuggyProse(), max_scenes=1)
+            self.assertEqual(n, 1)  # flagged placeholder, run continued
+            self.assertTrue(len(run.flags()) > 0)
+            self.assertEqual(run.next_beat().id, "c01s02")
+
+    def test_prose_outage_halts_without_accepting_scenes(self):
+        # Model gone (e.g. weights blob missing -> 404): the scene is NOT done.
+        # Grinding every beat into a "[SCENE FAILED]" placeholder would leave a
+        # "complete" book of holes by morning.
         with tempfile.TemporaryDirectory() as tmp:
             run = make_run(tmp)
             client = MockOllama()
             client.fail_models.add("brie7b:latest")
-            client.fail_models.add("qwen3.5:4b")
-            n = run_loop(run, client=client, max_scenes=1)
-            self.assertEqual(n, 1)  # flagged placeholder, run continued
-            self.assertEqual(len(run.flags()) > 0, True)
-            self.assertEqual(run.next_beat().id, "c01s02")
+            n = run_loop(run, client=client)
+            self.assertEqual(n, 0)
+            self.assertEqual(run.scene_files(), [])  # no placeholder text on disk
+            self.assertEqual(run.next_beat().id, "c01s01")  # still pending
+            steps = [e["step"] for e in run.ledger()]
+            self.assertIn("scene_failed", steps)
+            self.assertIn("run_halted", steps)
+            self.assertNotIn("scene_accepted", steps)
+
+    def test_run_resumes_real_prose_after_outage(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            run = make_run(tmp)
+            client = MockOllama()
+            client.fail_models.add("brie7b:latest")
+            run_loop(run, client=client)  # outage night: halts immediately
+            client.fail_models.clear()  # model restored
+            n = run_loop(run, client=client)
+            self.assertEqual(n, 3)  # every scene written, from the first
+            self.assertIsNone(run.next_beat())
+            for path in run.scene_files():
+                self.assertNotIn("SCENE FAILED", path.read_text())
 
 
 if __name__ == "__main__":

@@ -262,6 +262,14 @@ def run_loop(run: Run, client: Ollama | None = None, max_scenes: int | None = No
             return written
         try:
             data = write_scene(run, client, beat)
+        except OllamaError as e:
+            # Model/host unreachable even after the client's own backoff: this
+            # scene is not done. Accepting a placeholder for every remaining
+            # beat would end the night with a "complete" book of holes, so stop
+            # here; the next run resumes at this same scene.
+            run.log("scene_failed", {"scene_id": beat.id, "error": f"OllamaError: {e}", "flag": True})
+            run.log("run_halted", {"reason": "model unavailable", "scene_id": beat.id, "flag": True})
+            return written
         except Exception as e:
             # scene-level catch: skip + flag + move on, never die overnight.
             # Deliberately broad — a code bug flags every scene and ruins one
