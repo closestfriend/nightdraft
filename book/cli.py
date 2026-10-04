@@ -81,7 +81,7 @@ def cmd_compile(args):
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(prog="book", description="wer-book-harness")
+    parser = argparse.ArgumentParser(prog="book", description="nightdraft")
     parser.add_argument("--runs-dir", type=Path, default=DEFAULT_RUNS_DIR)
     sub = parser.add_subparsers(dest="command", required=True)
 

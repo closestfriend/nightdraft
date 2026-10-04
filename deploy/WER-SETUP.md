@@ -36,7 +36,7 @@ and exits when the draft completes.
 ## Morning routine (from anywhere, once Tailscale is up)
 
 ```bash
-ssh wer 'cd wer-book-harness && python3 -m book status <slug>'
+ssh wer 'cd nightdraft && python3 -m book status <slug>'
 ```
 Read the flags. Edit `bible.json` / upcoming `outline.json` beats if steering is
 needed. The drift check logs its own course-corrections to the ledger — audit them.

@@ -1,4 +1,4 @@
-# wer-book-harness — Design
+# nightdraft — Design
 
 *Converged 2026-07-11 (Hunter + Claude), from a thread started 2026-06-28 in the philm session.
 This doc is the cross-session anchor: read this before touching the code.*
