@@ -1,4 +1,4 @@
-# wer-book-harness
+# nightdraft
 
 Fire-and-forget novel generation on idle hardware. Give it a premise; it plans an
 outline, then grinds scene-by-scene — maintaining a story bible, a rolling summary,
