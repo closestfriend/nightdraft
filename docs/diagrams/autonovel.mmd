@@ -1,0 +1,61 @@
+flowchart TB
+  subgraph phase1["Phase 1 — Foundation · loop until foundation_score > 7.5"]
+    SEED["seed.txt / seed.py"] --> WORLD["gen_world.py → world.md"]
+    WORLD --> CHARS["gen_characters.py → characters.md"]
+    CHARS --> OUTLINE["gen_outline.py → outline.md"]
+    OUTLINE --> FSL["gen_outline_part2.py<br/>foreshadowing ledger"]
+    FSL --> CANON["gen_canon.py → canon.md"]
+    CANON --> VOICE["voice_fingerprint.py → voice.md"]
+    VOICE --> FSCORE{"foundation_score > 7.5?"}
+    FSCORE -->|no| WORLD
+    FSCORE -->|yes| PHASE2
+  end
+
+  subgraph phase2["Phase 2 — First draft · sequential chapters"]
+    PHASE2[start drafting] --> DRAFT["draft_chapter.py / run_drafts.py<br/>chapters/ch_NN.md"]
+    DRAFT --> EVAL["evaluate.py<br/>mechanical anti-slop + LLM judge"]
+    EVAL -->|"score ≤ 6.0"| RETRY[retry chapter]
+    RETRY --> DRAFT
+    EVAL -->|"score > 6.0 · keep"| NEXTCH{"more chapters?"}
+    NEXTCH -->|yes| DRAFT
+    NEXTCH -->|no| PHASE3A
+  end
+
+  subgraph phase3a["Phase 3a — Automated revision · plateau detection"]
+    PHASE3A[revision cycles] --> ADV["adversarial_edit.py<br/>cut lists"]
+    ADV --> CUTS[apply_cuts.py]
+    CUTS --> PANEL["reader_panel.py<br/>4-persona eval"]
+    PANEL --> BRIEF["gen_brief.py → briefs/"]
+    BRIEF --> REWRITE[gen_revision.py]
+    REWRITE --> PLATEAU{"scores plateaued?"}
+    PLATEAU -->|no| ADV
+    PLATEAU -->|yes| PHASE3B
+  end
+
+  subgraph phase3b["Phase 3b — Opus review loop"]
+    PHASE3B[full manuscript] --> OPUS["review.py<br/>literary critic + fiction professor"]
+    OPUS --> FIX[fix top actionable items]
+    FIX --> MAJOR{"major items remain?"}
+    MAJOR -->|yes| OPUS
+    MAJOR -->|no| PHASE4
+  end
+
+  subgraph phase4["Phase 4 — Export"]
+    PHASE4[export] --> TEX["typeset LaTeX → PDF"]
+    PHASE4 --> EPUB[ePub build]
+    PHASE4 --> ART["gen_art / cover · fal.ai"]
+    PHASE4 --> AUDIO["audiobook · ElevenLabs"]
+    PHASE4 --> LAND[landing/index.html]
+  end
+
+  STATE[("state.json<br/>phase · scores · debts")] -.-> phase1
+  STATE -.-> phase2
+  STATE -.-> phase3a
+  STATE -.-> phase3b
+
+  classDef file fill:#f5f5f5,stroke:#888,color:#222
+  classDef cloud fill:#fff4e5,stroke:#b87a00,color:#222
+  classDef gate fill:#e8f0fe,stroke:#3b6ea5,color:#222
+  class SEED,WORLD,CHARS,OUTLINE,CANON,VOICE,DRAFT file
+  class EVAL,OPUS,ART,AUDIO cloud
+  class FSCORE,NEXTCH,PLATEAU,MAJOR gate

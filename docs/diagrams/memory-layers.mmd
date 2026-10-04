@@ -1,0 +1,19 @@
+flowchart LR
+  subgraph wer["wer-book-harness memory"]
+    direction TB
+    W1[premise.md] --> W2[outline.json]
+    W2 --> W3[bible.json]
+    W3 --> W4[summary.md]
+    W4 --> W5["manuscript/cNNsNN.md"]
+    W6["ledger.jsonl<br/>append-only truth"] --- W5
+  end
+
+  subgraph auto["autonovel layers"]
+    direction TB
+    A5["voice.md — HOW"] --> A4["world.md — WHAT"]
+    A4 --> A3["characters.md — WHO"]
+    A3 --> A2["outline.md — HAPPENS"]
+    A2 --> A1["chapters/ch_NN.md — PROSE"]
+    AX["canon.md — WHAT IS TRUE"] --- A1
+    AS["state.json debts"] --- A2
+  end

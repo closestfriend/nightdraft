@@ -7,7 +7,9 @@ a flag in the ledger. A flagged wart beats a stalled run at 2am.
 import json
 
 from . import prompts
+from .clients import make_client
 from .ollama import Ollama, OllamaError, extract_json
+from .openrouter import BudgetExceeded
 from .state import Beat, Run
 
 
@@ -116,8 +118,10 @@ def write_scene(run: Run, client: Ollama, beat: Beat) -> dict:
                 run.previous_scene_tail(beat),
                 cfg["scene_words"],
                 revision_notes,
+                run.voice(),
             ),
             temperature=cfg["prose_temperature"],
+            think=cfg.get("prose_think"),
             num_ctx=cfg["num_ctx"],
         )
         return (msg.get("content") or "").strip()
@@ -138,6 +142,8 @@ def write_scene(run: Run, client: Ollama, beat: Beat) -> dict:
             verdict = normalize_verdict(consistency_check(run, client, prose, slice_text))
             if any(v["severity"] == "major" for v in verdict["violations"]):
                 flags.append("unresolved_canon_violation")
+    except BudgetExceeded:
+        raise  # the cap is a stop signal, not a per-scene flag
     except OllamaError as e:
         flags.append(f"check_failed:{e}")
 
@@ -156,6 +162,8 @@ def write_scene(run: Run, client: Ollama, beat: Beat) -> dict:
         for thread in extraction.get("threads_closed", []):
             run.close_thread(thread, beat.id)
         scene_summary = extraction.get("scene_summary", "")
+    except BudgetExceeded:
+        raise
     except OllamaError as e:
         flags.append(f"extract_failed:{e}")
 
@@ -188,6 +196,8 @@ def end_of_chapter(run: Run, client: Ollama, beat: Beat):
         paragraph = (msg.get("content") or "").strip()
         if paragraph:
             run.replace_chapter_summary(beat.chapter, beat.chapter_title, paragraph)
+    except BudgetExceeded:
+        raise
     except OllamaError:
         run.log("compress_failed", {"chapter": beat.chapter, "flag": True})
 
@@ -212,6 +222,8 @@ def drift_check(run: Run, client: Ollama, current_chapter: int):
             think=cfg.get("glue_think"),
             num_ctx=cfg["num_ctx"],
         )
+    except BudgetExceeded:
+        raise
     except OllamaError as e:
         run.log("drift_check_failed", {"chapter": current_chapter, "error": str(e), "flag": True})
         return
@@ -250,7 +262,7 @@ def run_loop(run: Run, client: Ollama | None = None, max_scenes: int | None = No
     """The overnight entry point. Resumes wherever the ledger says we are.
     Returns the number of scenes written this session."""
     cfg = run.config
-    client = client or Ollama(cfg["host"], timeout=cfg["request_timeout_s"])
+    client = client or make_client(run)
     if not run.beats():
         raise RuntimeError("no outline — run `book plan` first")
 
@@ -284,5 +296,9 @@ def run_loop(run: Run, client: Ollama | None = None, max_scenes: int | None = No
 
         nxt = run.next_beat()
         if nxt is None or nxt.chapter != beat.chapter:
-            end_of_chapter(run, client, beat)
+            try:
+                end_of_chapter(run, client, beat)
+            except BudgetExceeded as e:
+                run.log("run_halted", {"reason": "budget reached", "error": str(e), "flag": True})
+                return written
     return written

@@ -3,6 +3,7 @@
 import json
 
 from . import prompts
+from .clients import make_client
 from .ollama import Ollama
 from .state import Run
 
@@ -13,7 +14,7 @@ def plan(run: Run, client: Ollama | None = None):
             "refusing to re-plan: scenes already written (edit outline.json directly to steer)"
         )
     cfg = run.config
-    client = client or Ollama(cfg["host"], timeout=cfg["request_timeout_s"])
+    client = client or make_client(run)
     glue = cfg["glue_model"]
 
     outline = client.chat_json(
