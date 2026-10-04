@@ -25,6 +25,12 @@ DEFAULT_CONFIG = {
     "prose_temperature": 0.9,
     "glue_temperature": 0.2,
     "request_timeout_s": 900,
+    "prose_think": None,  # False = disable hidden reasoning on the prose model (billed as output on OpenRouter)
+    # --- OpenRouter (provider "openrouter"); ignored for local Ollama runs ---
+    "provider": "ollama",  # "ollama" | "openrouter"; key comes from $OPENROUTER_API_KEY, never config
+    "openrouter_base": None,  # None -> https://openrouter.ai/api/v1
+    "max_output_tokens": 4096,  # per-call runaway guard
+    "budget_usd": None,  # cumulative cap per run dir (usage.jsonl); None = uncapped
 }
 
 
@@ -52,6 +58,7 @@ class Run:
         self.bible_path = self.root / "bible.json"
         self.summary_path = self.root / "summary.md"
         self.premise_path = self.root / "premise.md"
+        self.voice_path = self.root / "voice.md"  # optional register/style brief for the prose model
         self.config_path = self.root / "config.json"
 
     # ---------- creation / loading ----------
@@ -88,6 +95,9 @@ class Run:
     @property
     def premise(self) -> str:
         return self.premise_path.read_text()
+
+    def voice(self) -> str:
+        return self.voice_path.read_text().strip() if self.voice_path.exists() else ""
 
     # ---------- outline / beats ----------
 

@@ -1,0 +1,48 @@
+flowchart TB
+  subgraph init["Init"]
+    P[premise.md] --> INIT["book init"]
+    INIT --> RUNDIR["runs/slug/"]
+  end
+
+  subgraph plan["Plan stage — glue model"]
+    RUNDIR --> PLAN["book plan"]
+    PLAN --> OUT["outline.json<br/>acts → chapters → scene beats"]
+    PLAN --> BIBLE0["bible.json seed<br/>chars / world / threads / timeline"]
+  end
+
+  subgraph overnight["Overnight loop — book run · resumes via ledger"]
+    NEXT{"next_beat()<br/>from ledger"}
+    OUT --> NEXT
+    BIBLE0 --> CTX
+
+    NEXT -->|done| DONE[draft_complete]
+    NEXT -->|scene| CTX["assemble context<br/>bible slice + summary<br/>+ prev scene tail + beat"]
+
+    CTX --> PROSE["generate prose<br/>prose model ~7–8B"]
+    PROSE --> EXTRACT["extract canon<br/>glue model · schema"]
+    EXTRACT --> MERGE["merge_facts → bible.json"]
+    MERGE --> CHECK["consistency check<br/>capped tool-loop<br/>search_manuscript / read_bible"]
+    CHECK -->|major violations| REVISE["one revise pass"]
+    REVISE --> CHECK2[re-check]
+    CHECK -->|ok| ACCEPT
+    CHECK2 --> ACCEPT["accept scene<br/>write manuscript/cNNsNN.md<br/>append summary + ledger"]
+    ACCEPT --> EOC{"end of chapter?"}
+    EOC -->|yes| COMPRESS[compress chapter summary]
+    COMPRESS --> DRIFT{"chapter % N == 0?"}
+    DRIFT -->|yes| DRIFTCHK["drift check vs outline<br/>revise FUTURE beats only"]
+    DRIFT -->|no| NEXT
+    DRIFTCHK --> NEXT
+    EOC -->|no| NEXT
+  end
+
+  subgraph morning["Morning"]
+    DONE --> STATUS["book status<br/>flags for review"]
+    STATUS --> COMPILE["book compile → book.md"]
+  end
+
+  classDef file fill:#f5f5f5,stroke:#888,color:#222
+  classDef stage fill:#e8f0fe,stroke:#3b6ea5,color:#222
+  classDef danger fill:#fde8e8,stroke:#a53b3b,color:#222
+  class P,OUT,BIBLE0,DONE file
+  class PLAN,PROSE,EXTRACT,CHECK,ACCEPT,COMPILE stage
+  class REVISE danger

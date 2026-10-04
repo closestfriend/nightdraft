@@ -213,5 +213,43 @@ class TestLoop(unittest.TestCase):
                 self.assertNotIn("SCENE FAILED", path.read_text())
 
 
+class SystemPromptSpy(MockOllama):
+    """Records the system prompt each model was sent."""
+
+    def __init__(self):
+        super().__init__()
+        self.system_by_model = {}
+
+    def chat(self, model, messages, **kw):
+        self.system_by_model[model] = messages[0]["content"]
+        return super().chat(model, messages, **kw)
+
+    def chat_json(self, model, messages, schema, **kw):
+        self.system_by_model[model] = messages[0]["content"]
+        return super().chat_json(model, messages, schema, **kw)
+
+
+class TestVoice(unittest.TestCase):
+    # The prose model is told nothing about the book's register except what is
+    # in its system prompt; without this, every book comes out as generic fiction.
+    def test_voice_file_reaches_the_prose_model_only(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            run = make_run(tmp)
+            (run.root / "voice.md").write_text("Institutional absurdity, treated with total seriousness.")
+            spy = SystemPromptSpy()
+            write_scene(run, spy, run.beats()[0])
+            self.assertIn("Institutional absurdity", spy.system_by_model[run.config["prose_model"]])
+            self.assertNotIn("Institutional absurdity", spy.system_by_model[run.config["glue_model"]])
+
+    def test_runs_without_a_voice_file_send_the_prompt_unchanged(self):
+        from book import prompts
+
+        with tempfile.TemporaryDirectory() as tmp:
+            run = make_run(tmp)
+            spy = SystemPromptSpy()
+            write_scene(run, spy, run.beats()[0])
+            self.assertEqual(spy.system_by_model[run.config["prose_model"]], prompts.PROSE_SYSTEM)
+
+
 if __name__ == "__main__":
     unittest.main()

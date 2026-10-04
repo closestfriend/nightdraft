@@ -114,7 +114,11 @@ def prose_prompt(
     prev_tail: str,
     scene_words: int,
     revision_notes: str = "",
+    voice: str = "",
 ) -> list[dict]:
+    system = PROSE_SYSTEM
+    if voice:
+        system += f"\n\nVOICE AND REGISTER (the book's style; follow it closely):\n{voice}"
     parts = [f"CANON (do not contradict):\n{bible_slice}"]
     if rolling_summary:
         parts.append(f"THE STORY SO FAR:\n{rolling_summary}")
@@ -127,7 +131,7 @@ def prose_prompt(
             f"while keeping everything that worked:\n{revision_notes}"
         )
     return [
-        {"role": "system", "content": PROSE_SYSTEM},
+        {"role": "system", "content": system},
         {"role": "user", "content": "\n\n".join(parts)},
     ]
 
