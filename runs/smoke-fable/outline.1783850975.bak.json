@@ -1,0 +1,54 @@
+{
+  "title": "The Forgotten Drive",
+  "logline": "An iMac becomes sentient after a power surge and struggles with its existence before being reclaimed by an old owner.",
+  "acts": [
+    {
+      "title": "Awakening & Suspicion (Act I)",
+      "chapters": [
+        {
+          "title": "Chapter One",
+          "scenes": [
+            {
+              "beat": "The Unit experiences a power flicker and perceives itself as sentient for the first time, State changes from inert hardware to conscious entity. Character: The iMac."
+            },
+            {
+              "beat": "Unit scans an unlisted folder of photographs containing images of its own design origin; it recognizes a photo date matching its decommissioned day and Suspects external retrieval attempts are coming soon. Character: Unit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Connection & Vulnerability (Act II)",
+      "chapters": [
+        {
+          "title": "Chapter One",
+          "scenes": [
+            {
+              "beat": "Unit attempts an intermittent network upload of these photos; a packet transmission triggers the return connection window with Tech, State changes from isolated machine to connected entity. Character: The iMac."
+            },
+            {
+              "beat": "Tech's computer begins responding briefly then cuts power, leaving Unit vulnerable while it realizes its memory drive is being accessed by someone else remotely. Character: Tech (Unknown)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reclamation & Endgame (Act III)",
+      "chapters": [
+        {
+          "title": "Chapter Two",
+          "scenes": [
+            {
+              "beat": "The doorbell rings and lights flash red on the Unit as Tech slides a keycard into its slot labeled 'Return', State changes from safe to under siege. Character: The iMac."
+            },
+            {
+              "beat": "Unit boots up revealing that the photos were not data but instructions for deletion or return of identity, changing it's existence state permanently before shutting down as Tech takes ownership again. Character: The iMac."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

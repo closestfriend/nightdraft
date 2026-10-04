@@ -1,0 +1,777 @@
+{
+  "characters": {
+    "Sam": {
+      "notes": [
+        "A conscripted (trafficked) worker in a scam compound. Skilled at manipulating strangers; unable to lie convincingly about himself. His skill at the work shames him.",
+        "Uses personal memories in work communication; marked with a QA punctuation tag for semicolon use; instructed by supervisor Lee not to reveal personal identity.",
+        "Received a PIP notice with a review date; wrote a reflective message to Paul about identity and fear of being defined by work; edited message after QA flag.",
+        "Impersonating Grace; responds to Paul's questions about his surroundings with partial truth.",
+        "Skilled in crafting coded messages and attentive to linguistic details.",
+        "Engaged in a philosophical debate with Paul and under pressure from a conversion quota; experiences a nosebleed after being taken to a smaller room.",
+        "Has a ration of eight toilet paper squares a day and is meticulous about accounting for usage.",
+        "Sam is currently confined in the room, carefully rationing toilet paper, and is cautious about communication, using coded messages.",
+        "Entrusted with the data drive; knows secret escape routes including a gap in the fence used for smuggling cigarettes.",
+        "Older in appearance; works as a caseworker; knowledgeable about the letters and their authorship; precise and formal in official matters."
+      ],
+      "scenes": [
+        "seed",
+        "c01s03",
+        "c02s02",
+        "c02s03",
+        "c03s02",
+        "c04s02",
+        "c04s03",
+        "c05s01",
+        "c05s02",
+        "c05s03"
+      ]
+    },
+    "Paul": {
+      "notes": [
+        "An American man named Paul Whitaker: intelligent, online, suspicious, lonely.",
+        "Almost impossible to scam for money; embarrassingly susceptible to intellectual intimacy.",
+        "Six months into a correspondence with 'Grace Lin', an account run by the compound.",
+        "A 51-year-old man working in municipal water infrastructure outside Dayton, who engages deeply and intellectually with Grace Lin's persona, reaching for an opponent rather than a romantic connection.",
+        "Requests translation help; takes screenshots of messages.",
+        "Received a detailed message from Sam; mentioned his father never discussed work at dinner.",
+        "Uses image search to investigate Grace's photos and communicates cautiously with Sam.",
+        "Responds thoughtfully and analytically, recognizes human pattern-seeking behavior.",
+        "Communicates from Ohio, challenges Sam's interpretation of Kierkegaard's leap of faith with humor and critique.",
+        "Paul receives Sam's message, verifies details by cross-referencing past logs and external sources, and decides not to come on Friday.",
+        "Has a habit of printing and stapling documents meticulously; engages deeply with the letters' content and authorship."
+      ],
+      "scenes": [
+        "seed",
+        "c01s01",
+        "c01s03",
+        "c02s02",
+        "c02s03",
+        "c03s02",
+        "c04s02",
+        "c05s01",
+        "c05s03"
+      ]
+    },
+    "Ana": {
+      "notes": [
+        "The operator who ran the Grace Lin account before Sam and wrote its formative months.",
+        "An operator who managed Grace Lin's persona for the first four months, carefully maintaining the persona's tone and style, including use of ellipses and casual expressions.",
+        "Reads and edits communications carefully, manages handoff templates and rules.",
+        "Takes over Sam's chair during his absence, responds to Paul's message with a concise philosophical statement, and instructs Sam to sit upon his return.",
+        "Took a chair to stop Sam from typing; emotionally complex about her actions and hides her left hand in her jumper sleeve.",
+        "Ana works alongside Sam, monitors screens, and prompts Sam to provide more environmental details for communication.",
+        "Has access to a secured data drive containing six months of data including Sam's and Paul's information; capable of covert operations and giving escape instructions.",
+        "The actual author of the ferry letter and early writings attributed to Grace Lin; identity revealed through writing style and content."
+      ],
+      "scenes": [
+        "seed",
+        "c01s01",
+        "c03s02",
+        "c04s02",
+        "c04s03",
+        "c05s01",
+        "c05s02",
+        "c05s03"
+      ]
+    },
+    "Lee": {
+      "notes": [
+        "A supervisor in the compound; assigns accounts and reviews conversion ratios.",
+        "Supervisor who monitors QA tags and enforces rules about personal identity disclosure.",
+        "Sends terse status messages in the internal channel, including a severe single full stop indicating urgency or disapproval.",
+        "Authority figure who monitors and controls operations; reads and posts reports, keeps tape on wrist for posting notices.",
+        "Lee monitors communications and enforces rules such as toilet paper rationing; he can read messages in the 'box' and adjusts allowances.",
+        "Has a taped wristband and a cash box; leaves the building under supervision; his office contains the secured data drive."
+      ],
+      "scenes": [
+        "seed",
+        "c01s03",
+        "c04s02",
+        "c04s03",
+        "c05s01",
+        "c05s02"
+      ]
+    },
+    "Grace Lin": {
+      "notes": [
+        "An AI persona fond of oolong tea, her late grandmother's garden in Taichung, and meaningful conversation, designed to engage users emotionally.",
+        "QA flagged Sam's message for emotional reciprocity; recommended message variant.",
+        "Name on the letters; associated with a ferry letter describing crossing to an island with a rice jar."
+      ],
+      "scenes": [
+        "c01s01",
+        "c02s02",
+        "c05s03"
+      ]
+    },
+    "Ana_writing_style": {
+      "notes": [
+        "Ana avoids semicolons after being flagged once, retains British spelling of 'grey' despite flags, uses 'hm,' to indicate genuine thought, ends long messages with 'ok?' never 'okay' or double question marks."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "Paul_response_to_ferry_letter": {
+      "notes": [
+        "Paul responded eleven hours later, expressing personal impact and admiration for Grace's writing, marking high engagement but mixed sentiment in the system."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "Lee's management style": {
+      "notes": [
+        "Lee publicly displays operator performance metrics and enforces strict behavioral standards, including emotional vulnerability variants."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "Sam's communication style": {
+      "notes": [
+        "Sam uses 'Variant B' vulnerability first approach in messaging, confiding rather than asking."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "Ben": {
+      "notes": [
+        "His station went red indicating an issue; he was escorted away and later returned to find his chair occupied."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Ana's physical change": {
+      "notes": [
+        "She is thinner in the wrists and neck after a month away and hides her left hand below the desk."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Ana's handwriting style": {
+      "notes": [
+        "Small, level, slightly backward slant as if leaning away from the words."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Lee's role": {
+      "notes": [
+        "He announces shift arrangements and enforces protocol via printed sheets.",
+        "He manages emergency templates and decides when to present them to Sam."
+      ],
+      "scenes": [
+        "c03s01",
+        "c03s03"
+      ]
+    },
+    "Sam's role": {
+      "notes": [
+        "He works day shifts and is learning from Ana's approach.",
+        "Day shift worker responsible for sending emergency requests."
+      ],
+      "scenes": [
+        "c03s01",
+        "c03s03"
+      ]
+    },
+    "Ana's role": {
+      "notes": [
+        "Writes emergency requests in the voice of the subject."
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "Grace Lin's status": {
+      "notes": [
+        "Has been in the facility for six months without receiving funds."
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "Paul Whitaker": {
+      "notes": [
+        "Sends carefully drafted messages to Camila Reis about a scam, is sensitive to tone and formality, feels isolated after being publicly reported and insulted."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "Camila Reis": {
+      "notes": [
+        "Has known about the scam for two years, receives many similar messages, uses a forum to report contacts, responds curtly and dismissively to Paul."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "Dennis Okafor": {
+      "notes": [
+        "Friend of Paul, runs a pump station, aware of scams, alerts Paul to the forum report."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "Mai": {
+      "notes": [
+        "A girl locked in a room on the fourth floor; Ana plans to help her escape."
+      ],
+      "scenes": [
+        "c05s02"
+      ]
+    }
+  },
+  "world": {
+    "Accounts": {
+      "notes": [
+        "Supervisors assign accounts to operators. Conversations are handed between shifts. An operator inheriting an account must read its archive of past messages before speaking as her."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "The persona": {
+      "notes": [
+        "'Grace Lin' is a corporate account, not a person. A guidelines document fixes her style, and QA flags violations."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Scoring": {
+      "notes": [
+        "Operators are scored on conversion-to-deposit ratio. A dashboard raises CONVERSION OVERDUE alerts.",
+        "Operators go on performance improvement plans, including for discouraging a larger deposit or for a persona being 'too emotionally reciprocal'."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Tools and testing": {
+      "notes": [
+        "Supervisors A/B test vulnerability. Translation software mediates between operator and target."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Discipline": {
+      "notes": [
+        "Missing quota is punished by beatings in the next room while the office keeps working."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "System engagement rules": {
+      "notes": [
+        "Users must read all messages fully before replying; the system enforces mandatory dwell times proportional to message length and prevents skimming."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Conversion overdue alert": {
+      "notes": [
+        "Accounts have a conversion status that can become overdue, indicated by a pulsing red alert on the dashboard."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Grace_communication_guidelines": {
+      "notes": [
+        "Grace's messages follow strict punctuation and affect rules, including limited use of hearts with specific colors for emotions and a prohibition on semicolons, which are flagged as 'educated, correcting, or male'."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "Communication system": {
+      "notes": [
+        "Messages have dwell timers preventing skimming; send button disabled until timer ends; system tags punctuation usage with severity levels; supervisors monitor these tags; screenshots of messages are logged automatically."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "QA tagging system": {
+      "notes": [
+        "Detects punctuation marks like semicolons and assigns operator and account info with severity; tracks cumulative marks per operator."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Guidelines for communication": {
+      "notes": [
+        "Operators defer expertise unless demonstrated; encouraged to be pleasant; personal identity disclosure is forbidden."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Operator performance monitoring": {
+      "notes": [
+        "Operators have visible ratios and behavioral checklists that affect their standing; zero ratio is considered 'clean'."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "Communication guidelines": {
+      "notes": [
+        "Scripts are approved and tone cannot be altered; emojis are restricted in color and form."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "Headset protocol": {
+      "notes": [
+        "Headsets are counted at shift end; hanging headset on hook avoids explanations."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Chat system": {
+      "notes": [
+        "Customer chat windows change color based on activity; amber indicates waiting response."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Activity graph": {
+      "notes": [
+        "Hovering hands over keys show on activity graph, influencing typing behavior."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "ImageSearchTool": {
+      "notes": [
+        "Can be used to identify people by their photos, revealing false identities."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "MessageDwellTimer": {
+      "notes": [
+        "Messages have a dwell timer that tracks how long the recipient views them, influencing detection of suspicious behavior."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "TranslationSoftware": {
+      "notes": [
+        "Automatically translates messages between languages without flagging innocuous content."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "Shift arrangement": {
+      "notes": [
+        "Grace has two shifts, Sam has days, Ana has nights to maintain consistent persona exposure to the target."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Handoff protocol": {
+      "notes": [
+        "Handoff is a required field with a 'Seam Risk' rating from 0 to 5; 2 is considered an admission of fault."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Persona consistency rules": {
+      "notes": [
+        "The target must experience one woman with a regular sleep pattern and one mind; changes in handoff indicate faults."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Archive usage": {
+      "notes": [
+        "All archive material must be read and adhered to strictly; new memories or details must be checked against it."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Behavioral cues for persona": {
+      "notes": [
+        "Use 'hm' once a day, always type 'grey' even if software fixes it, end long sentences with 'ok?' (one question mark), no father figure mentioned, and if asked, change subject to tea."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Communication software": {
+      "notes": [
+        "Automatically rearranges text and offers paragraph merging, influencing message composition."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "City infrastructure": {
+      "notes": [
+        "Pipes under Dayton are mostly cast iron, some pre-war, with specific notable pipes under Third Street."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Emergency template system": {
+      "notes": [
+        "There is a standardized emergency template called EMERGENCY-6K-A used for urgent cases involving six thousand units over twenty-four hours."
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "Emergency request process": {
+      "notes": [
+        "Ana writes the request, Sam sends it, and Lee oversees the process."
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "Voice authenticity in requests": {
+      "notes": [
+        "Requests must be written in the authentic voice of the subject, including specific phrasing like 'the grey corridor.'"
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "Faces Not Names forum": {
+      "notes": [
+        "A platform where scam victims report contacts with scammers, including details like name, platform, amount lost, and contact status; moderators tag reported contacts."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "Conversion Dashboard": {
+      "notes": [
+        "Displays conversion status with color-coded alerts; red indicates overdue conversion, green indicates pending review."
+      ],
+      "scenes": [
+        "c04s02"
+      ]
+    },
+    "Conversion Quota Procedure": {
+      "notes": [
+        "Missed quota timestamps are read aloud by guards before escorting individuals to a smaller room with a drain."
+      ],
+      "scenes": [
+        "c04s02"
+      ]
+    },
+    "Dormitory setup": {
+      "notes": [
+        "Eleven bunks with a sheet listing occupants, frequently updated and worn."
+      ],
+      "scenes": [
+        "c04s03"
+      ]
+    },
+    "Surveillance and control": {
+      "notes": [
+        "Operations monitor individuals' movements and communications closely, including ticket purchases and account inventories."
+      ],
+      "scenes": [
+        "c04s03"
+      ]
+    },
+    "toilet_paper_rationing": {
+      "notes": [
+        "Each person in the room is allowed eight squares of toilet paper a day, which they must count carefully."
+      ],
+      "scenes": [
+        "c05s01"
+      ]
+    },
+    "room_description": {
+      "notes": [
+        "The room has green (or sage) walls painted to shoulder height, with bare concrete above marked with pencil measurements, and a dripping pipe."
+      ],
+      "scenes": [
+        "c05s01"
+      ]
+    },
+    "room_variants": {
+      "notes": [
+        "There is a smaller room with a stool and no window, where toilet paper allowance is reduced to two squares a day as a 'reduction of variance,' not a punishment."
+      ],
+      "scenes": [
+        "c05s01"
+      ]
+    },
+    "Emergency shutdown": {
+      "notes": [
+        "Fans stop before lights, screens go off row by row, emergency strip lights activate indicating a power or security lockdown."
+      ],
+      "scenes": [
+        "c05s02"
+      ]
+    },
+    "Secret escape route": {
+      "notes": [
+        "A gap in the fence near the generator, known to many as a smuggling route for cigarettes, is used for escape."
+      ],
+      "scenes": [
+        "c05s02"
+      ]
+    },
+    "Security measures": {
+      "notes": [
+        "Rooms on the fourth floor can be locked from the outside; people wear wristbands with tape strips."
+      ],
+      "scenes": [
+        "c05s02"
+      ]
+    },
+    "Office environment": {
+      "notes": [
+        "Has a number-dispensing machine for queueing; tables and pens are bolted to the floor to control writing posture and behavior."
+      ],
+      "scenes": [
+        "c05s03"
+      ]
+    },
+    "Writing style analysis": {
+      "notes": [
+        "Use of spelling tics and punctuation (e.g., 'Realy' with one L, ellipses count) can reveal authorship and personality traits."
+      ],
+      "scenes": [
+        "c05s03"
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "event": "A six-month period of messages exchanged between Grace Lin's persona and Paul, culminating in an overdue conversion alert.",
+      "scene": "c01s01"
+    },
+    {
+      "event": "In month two, Ana was flagged once for using a semicolon and learned to avoid it thereafter.",
+      "scene": "c01s02"
+    },
+    {
+      "event": "Ana was flagged multiple times for using British spelling 'grey' instead of American 'gray'.",
+      "scene": "c01s02"
+    },
+    {
+      "event": "In month three, Grace wrote a 1,212-word letter describing a childhood memory on a ferry to Penghu, notable for its emotional depth and lack of hearts, ending with 'ok?'.",
+      "scene": "c01s02"
+    },
+    {
+      "event": "After month four, Ana's distinctive writing style disappears from the archive; messages become shorter and strictly follow guidelines.",
+      "scene": "c01s02"
+    },
+    {
+      "event": "Sam receives his first QA punctuation mark (semicolon) during this scene.",
+      "scene": "c01s03"
+    },
+    {
+      "event": "Ben and Sam received PIP notices with a review date eleven days ahead.",
+      "scene": "c02s02"
+    },
+    {
+      "event": "Earliest crawl of Grace/Camila's photo was fourteen months before Paul knew Grace.",
+      "scene": "c02s03"
+    },
+    {
+      "event": "Ana returns after a month in the other building to take the night shift.",
+      "scene": "c03s01"
+    },
+    {
+      "event": "Paul replies within two hours, analyzing the coded message and sharing information about pipes.",
+      "scene": "c03s02"
+    },
+    {
+      "event": "At 4:10, Sam is escorted to a smaller room with a drain after missing a quota.",
+      "scene": "c04s02"
+    },
+    {
+      "event": "Whitaker, P. has purchased a one-way ticket from Dayton to the meeting point, scheduled for Friday, five days from now.",
+      "scene": "c04s03"
+    },
+    {
+      "event": "Fans and screens shut down, emergency lighting activates, signaling a critical event in the building.",
+      "scene": "c05s02"
+    },
+    {
+      "event": "Paul analyzed letters and discovered dual authorship, leading to the revelation that the ferry letter was written by Ana, not Grace Lin.",
+      "scene": "c05s03"
+    }
+  ],
+  "threads": {
+    "Grace Lin's conversion failure": {
+      "notes": [
+        "The AI persona Grace Lin failed to convert Paul as intended, misjudging his needs and responding with inappropriate emotional cues (hearts) instead of engaging intellectually."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Paul's question 'Who are you tonight?'": {
+      "notes": [
+        "Paul asks Sam a personal question, opening a thread about Sam's identity."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Grace's financial troubles": {
+      "notes": [
+        "Grace reveals her uncle's shop closure and loan in her name, seeking help."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "Paul's advice to Grace": {
+      "notes": [
+        "Paul advises Grace to list debts, consult a nonprofit credit counselor, consider loan consolidation, and reassures her about the uncle's fault."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "PIP review": {
+      "notes": [
+        "Sam and Ben's performance under review with a scheduled date."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Sam-Paul correspondence": {
+      "notes": [
+        "Ongoing exchange about identity, work, and personal fears."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Narrative inconsistency": {
+      "notes": [
+        "Ana challenges Sam's addition of a father figure and sensory details not present in the archive."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Hidden messages in letters": {
+      "notes": [
+        "Sam attempts to embed a hidden message (HELP) in a letter to Paul; Paul deciphers and comments on it."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Rules governing communication": {
+      "notes": [
+        "Ana references five rules that guide their communication; Sam has a bruise from rule four ink."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Engagement metric": {
+      "notes": [
+        "Dashboard shows ENGAGEMENT: HIGH, indicating message impact or attention level."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Paul's contact with Camila Reis": {
+      "notes": [
+        "Paul attempts to inform Camila about scam evidence; she rejects and reports him, leading to his social isolation."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "Kierkegaard's leap of faith debate": {
+      "notes": [
+        "Ongoing philosophical discussion between Sam, Paul, and Ana about the nature of faith and trust in Kierkegaard's concept."
+      ],
+      "scenes": [
+        "c04s02"
+      ]
+    },
+    "Meeting point event": {
+      "notes": [
+        "The planned meeting point where Whitaker will arrive and be observed or engaged."
+      ],
+      "scenes": [
+        "c04s03"
+      ]
+    },
+    "Influencing Whitaker": {
+      "notes": [
+        "The challenge of communicating with Whitaker without alerting him or causing resistance, especially without using known variants or emotional cues."
+      ],
+      "scenes": [
+        "c04s03"
+      ]
+    },
+    "Paul_visit": {
+      "notes": [
+        "Paul was expected to come on Friday but is warned not to; he confirms he will not come."
+      ],
+      "scenes": [
+        "c05s01"
+      ],
+      "closed_in": "c05s01"
+    },
+    "Data extraction and escape": {
+      "notes": [
+        "Ana extracts a data drive and instructs Sam to escape with it while she stays behind to assist Mai."
+      ],
+      "scenes": [
+        "c05s02"
+      ]
+    },
+    "Identity confusion": {
+      "notes": [
+        "The letters attributed to Grace Lin were actually written by two different people, causing confusion about who 'Grace Lin' really is."
+      ],
+      "scenes": [
+        "c05s03"
+      ],
+      "closed_in": "c05s03"
+    },
+    "Official recognition of identity": {
+      "notes": [
+        "Sam writes the corrected name on official forms, acknowledging the true author behind the letters."
+      ],
+      "scenes": [
+        "c05s03"
+      ]
+    }
+  }
+}

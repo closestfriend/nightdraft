@@ -1,0 +1,231 @@
+{
+  "characters": {
+    "Kyan": {
+      "notes": [
+        "A conscripted (trafficked) worker in a scam compound. Skilled at manipulating strangers; unable to lie convincingly about himself. His skill at the work shames him.",
+        "A conscripted worker assigned to impersonate Aung in a romantic online account, feeling shame and emotional conflict about manipulating strangers.",
+        "An operator tasked with impersonating Aung's voice in a messaging archive, following strict guidelines and procedures.",
+        "An operator managing a scripted account, capable of self-awareness and emotional complexity, but constrained by strict procedural guidelines and subject to punishment for deviations."
+      ],
+      "scenes": [
+        "seed",
+        "c01s01",
+        "c01s02",
+        "c01s03"
+      ]
+    },
+    "Mark": {
+      "notes": [
+        "An American man: intelligent, online, suspicious, lonely.",
+        "Almost impossible to scam for money; embarrassingly susceptible to intellectual intimacy.",
+        "Six months into a romantic correspondence with 'her', an account run by the compound.",
+        "An American client involved in a six-month online correspondence with Aung's persona, intelligent, suspicious, lonely, and vulnerable to intellectual intimacy.",
+        "A correspondent who interacts with the account, seeking genuine connection beyond scripted messages, emotionally invested in Kyan's unscripted revelations."
+      ],
+      "scenes": [
+        "seed",
+        "c01s01",
+        "c01s03"
+      ]
+    },
+    "Aung": {
+      "notes": [
+        "The operator who ran her account before Kyan and wrote its formative months.",
+        "The previous operator of the romantic account, who built a fabricated intimacy with Mark over six months, now absent possibly due to punishment or reassignment.",
+        "A previous operator or persona whose voice and style are archived and impersonated; her style includes specific punctuation and emotional tics.",
+        "Previous operator of the account, currently absent due to punishment or reassignment linked to procedural violations."
+      ],
+      "scenes": [
+        "seed",
+        "c01s01",
+        "c01s02",
+        "c01s03"
+      ]
+    },
+    "Supervisor": {
+      "notes": [
+        "A figure overseeing the operators, enforcing guidelines and monitoring performance, indifferent to the beatings occurring nearby."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    }
+  },
+  "world": {
+    "Accounts": {
+      "notes": [
+        "Supervisors assign accounts to operators. Conversations are handed between shifts. An operator inheriting an account must read its archive of past messages before speaking as her."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "The persona": {
+      "notes": [
+        "'She' is a corporate account, not a person. A guidelines document fixes her style: commas and heart emojis, never semicolons; QA flags violations."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Scoring": {
+      "notes": [
+        "Operators are scored on conversion-to-deposit ratio. A dashboard raises CONVERSION OVERDUE alerts.",
+        "Operators go on performance improvement plans, including for discouraging a larger deposit or for a persona being 'too emotionally reciprocal'."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Tools and testing": {
+      "notes": [
+        "Supervisors A/B test vulnerability. Translation software mediates between operator and target."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Discipline": {
+      "notes": [
+        "Missing quota is punished by beatings in the next room while the office keeps working."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Account Procedure": {
+      "notes": [
+        "Romantic online accounts are managed by operators who impersonate personas using strict guidelines (commas and heart emojis, never semicolons) monitored by QA flags to maintain consistency and emotional manipulation."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Translation Software": {
+      "notes": [
+        "Software mediates communication between operator and client, translating messages into the account's working language and persona voice.",
+        "Mediates between operator's thoughts and recipient's language, enforcing style and emotional parameters, providing real-time feedback and flags.",
+        "Renders operator's typed messages into the account's voice, enforcing style rules and adding procedural corrections automatically."
+      ],
+      "scenes": [
+        "c01s01",
+        "c01s02",
+        "c01s03"
+      ]
+    },
+    "Work Environment": {
+      "notes": [
+        "Operators work under supervisors with performance improvement plans, face physical punishment (beatings) nearby, and must meet conversion quotas to avoid flags."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Communication Procedure": {
+      "notes": [
+        "Operators must follow detailed guidelines including vocal tone, punctuation rules (commas and heart emojis allowed, semicolons forbidden), and controlled emotional reciprocity."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "QA System": {
+      "notes": [
+        "Quality assurance flags deviations from guidelines, including emotional reciprocity and timing, with flags leading to scores and punishments."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "Punishment Mechanism": {
+      "notes": [
+        "Punishments include physical beatings and procedural enforcement; the procedure itself is a form of punishment.",
+        "Includes physical correction (beatings) and reassignment, enforced as part of procedural compliance for operators who deviate from guidelines."
+      ],
+      "scenes": [
+        "c01s02",
+        "c01s03"
+      ]
+    },
+    "Communication Protocol": {
+      "notes": [
+        "Messages must follow strict style rules: commas and heart emojis, no semicolons, controlled emotional reciprocity, with deviations flagged by QA software."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "QA System and Dashboard": {
+      "notes": [
+        "Monitors message compliance, flags emotional reciprocity, unscripted personal details, and conversion status; triggers supervisor annotations and recommends performance improvement or physical correction."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "event": "Kyan takes over the romantic account from Aung, inheriting six months of fabricated intimacy and tasked with converting it into a deposit.",
+      "scene": "c01s01"
+    },
+    {
+      "event": "Aung left or was reassigned six months ago; her archive and style are now used by Kyan to impersonate her.",
+      "scene": "c01s02"
+    },
+    {
+      "event": "Kyan sends unscripted personal details, triggering QA flags and supervisor annotations, marking a critical event in the account's operation.",
+      "scene": "c01s03"
+    }
+  ],
+  "threads": {
+    "Aung's Whereabouts": {
+      "notes": [
+        "Aung is gone from the account, possibly punished or moved, creating a thread about her fate."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Conversion Overdue": {
+      "notes": [
+        "The account has a 'CONVERSION OVERDUE' alert, indicating pressure to convert the relationship into financial gain."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Aung's Absence": {
+      "notes": [
+        "The reason for Aung's absence is a procedural detail, not a mystery, linked to punishment or reassignment."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "Operator Identity": {
+      "notes": [
+        "Kyan's struggle with his own identity as he becomes the procedure, losing distinction between self and role."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "Kyan's true identity and feelings": {
+      "notes": [
+        "Kyan's personal emotions and identity conflict with the scripted persona he must maintain."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Mark's investment in authenticity": {
+      "notes": [
+        "Mark seeks and responds to genuine, unscripted communication, deepening emotional intimacy beyond the script."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    }
+  }
+}

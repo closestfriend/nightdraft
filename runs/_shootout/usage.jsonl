@@ -1,0 +1,3 @@
+{"ts": "2026-09-29T07:00:00", "model": "prism-ml/ternary-bonsai-2-27b", "prompt_tokens": 1335, "completion_tokens": 1124, "reasoning_tokens": 0, "cost": 0.000662125}
+{"ts": "2026-09-29T07:00:12", "model": "thinkingmachines/inkling", "prompt_tokens": 1303, "completion_tokens": 907, "reasoning_tokens": 0, "cost": 0.00497635}
+{"ts": "2026-09-29T07:00:41", "model": "anthropic/claude-sonnet-5.5", "prompt_tokens": 2193, "completion_tokens": 2189, "reasoning_tokens": 830, "cost": 0.026276}

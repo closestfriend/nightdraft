@@ -1,0 +1,956 @@
+{
+  "characters": {
+    "Kyan": {
+      "notes": [
+        "A conscripted (trafficked) worker in a scam compound. Skilled at manipulating strangers; unable to lie convincingly about himself. His skill at the work shames him.",
+        "A call center worker who inherits Mark's account and must follow strict persona guidelines to convert emotional engagement into financial deposits, while enduring physical abuse and supervision.",
+        "A new operator assigned to Mark's account, inexperienced with a blank account history and under strict supervision to improve conversion rates.",
+        "A senior operator who is bound by strict communication procedures but chooses to express forbidden emotional intimacy in messages to Mark.",
+        "An operator following a strict procedure to convert emotional intimacy into a financial deposit, monitored by a supervisor, under threat of physical punishment if conversion fails.",
+        "An operator executing a scripted emotional manipulation procedure involving Mark, monitored closely by a supervisor, struggling between following procedure and personal feelings.",
+        "Is caught between following procedure and emotional authenticity, communicating with both Aung and Mark under supervisor's watch.",
+        "A character under pressure, insists he is not the person accused, communicates carefully with Mark and Aung, books a ride and plans to attend a meeting at the station.",
+        "A person forced to perform emotional manipulation in messages, struggling with imposed persona guidelines and punishment for deviation.",
+        "A character who is coerced to impersonate Aung and embed a wire transfer request within emotional vulnerability but resists doing so.",
+        "A man involved in a six-month curated interaction via an archive, now refusing to impersonate Aung or follow scripted procedures, seeking authentic connection.",
+        "Holds a paper bag symbolizing 4,500 overdue wire transfer; refuses to follow procedure blindly; insists on emotional truth and being recognized as himself, not as Aung or a procedure."
+      ],
+      "scenes": [
+        "seed",
+        "c01s01",
+        "c01s02",
+        "c01s03",
+        "c02s01",
+        "c02s02",
+        "c02s03",
+        "c03s03",
+        "c04s03",
+        "c05s01",
+        "c05s02",
+        "c05s03"
+      ]
+    },
+    "Mark": {
+      "notes": [
+        "An American man: intelligent, online, suspicious, lonely.",
+        "Almost impossible to scam for money; embarrassingly susceptible to intellectual intimacy.",
+        "Six months into a romantic correspondence with 'her', an account run by the compound.",
+        "An American timezone client who writes long, emotionally complex messages about loneliness and personal issues, targeted for financial conversion.",
+        "A client who is suspicious, lonely, and intellectually intimate, difficult to scam but vulnerable to procedural honesty.",
+        "The recipient of Kyan's messages, who is lonely and trusts Kyan beyond procedural limits.",
+        "The client whose wire transfer of 4,500 is overdue; suspicious and lonely, he tests Kyan's authenticity before sending money.",
+        "The target of Kyan's procedure, skeptical about the authenticity of photographs but emotionally vulnerable and susceptible to intellectual intimacy.",
+        "Requests clarity on who is asking for the wire transfer and will only send the wire to the non-performing persona.",
+        "Communicates with Kyan, insists photo is false, wire is 4,500, needs truth, holds the bag but does not send the wire immediately, invites Kyan to come as himself.",
+        "Recipient of messages and wire transfer requests, suspicious of false photo and overdue wire, awaiting Kyan's arrival.",
+        "A character holding responsibility ('holding the bag') for an overdue wire transfer and suspicious of a false photo related to the situation.",
+        "A man who has held a bag containing 4,500 overdue wire money for six months, conflicted between believing in the procedure and needing genuine feeling.",
+        "Holds physical proof of the 4,500 wire; suspicious of false photo and procedure; needs to feel Kyan is genuine before sending the wire."
+      ],
+      "scenes": [
+        "seed",
+        "c01s01",
+        "c01s02",
+        "c01s03",
+        "c02s01",
+        "c02s02",
+        "c02s03",
+        "c03s03",
+        "c04s03",
+        "c05s01",
+        "c05s02",
+        "c05s03"
+      ]
+    },
+    "Aung": {
+      "notes": [
+        "The operator who ran her account before Kyan and wrote its formative months.",
+        "Kyan's predecessor who managed Mark's account for six months and left a brief handoff note emphasizing not to match Mark's suspicion but to make him feel heard before asking for money.",
+        "Senior operator whose style is more intimate and less strictly procedural, whose archive Kyan inherits and mimics.",
+        "Has returned physically and is communicating covertly through the archive, instructing Kyan on emotional and procedural tactics.",
+        "Observed at the glass, silent but sends messages advising to make Kyan heard and not to ask yet.",
+        "Former operator who built the account's intimacy with Mark, left a handoff archive advising to make Mark feel heard before asking for wire transfer.",
+        "A persona or individual whose archived messages and mannerisms Kyan is instructed to mimic to manipulate a wire transfer request.",
+        "A silent figure behind a dirty glass at the station, whose reflection and silence serve as nonverbal communication and instruction; the original person Kyan was supposed to impersonate.",
+        "Absent but symbolically present through silence in trash can; associated with false photo and vulnerability test."
+      ],
+      "scenes": [
+        "seed",
+        "c01s01",
+        "c01s02",
+        "c02s03",
+        "c03s03",
+        "c04s03",
+        "c05s01",
+        "c05s02",
+        "c05s03"
+      ]
+    },
+    "Supervisor": {
+      "notes": [
+        "A fifty-year-old man who monitors Kyan's performance, enforces a performance improvement plan, and is associated with physical beatings as part of the work environment.",
+        "Enforces strict conversion quotas and threatens physical punishment for failure to convert deposits.",
+        "An authoritarian figure enforcing strict procedural compliance, threatening physical punishment for non-compliance.",
+        "Oversees Kyan's performance, enforces procedure compliance, authorizes physical discipline, and runs A/B tests to confirm emotional dependence.",
+        "Monitors Kyan's actions, enforces procedural rules, authorizes physical discipline, and pressures Kyan to complete the wire transfer.",
+        "Monitors Kyan closely, enforces discipline, and controls the emotional and procedural parameters of the interaction.",
+        "Exerts authority, demands improvement plan activation, confirms wire amount 4,500, authorizes punishment, insists procedure completes only when wire is received.",
+        "An authority figure conducting an A/B test on Kyan, enforcing emotional manipulation tactics and punishing refusal."
+      ],
+      "scenes": [
+        "c01s01",
+        "c01s02",
+        "c01s03",
+        "c02s01",
+        "c02s02",
+        "c02s03",
+        "c03s03",
+        "c05s01"
+      ]
+    },
+    "Kyan's secretive actions": {
+      "notes": [
+        "Kyan books a ride and arranges a meeting with Mark without informing Aung or the supervisor."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Aung's note": {
+      "notes": [
+        "Aung's note says 'do not match the suspicion, make him heard before money,' emphasizing emotional connection over financial matters."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Mark's response style": {
+      "notes": [
+        "Mark communicates with lowercase 'i', uses commas and hearts in messages, indicating a unique personal code or emotional nuance."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Supervisor's behavior": {
+      "notes": [
+        "The supervisor is controlling and threatening, using physical gestures and a performance improvement plan to pressure Kyan."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Mark's communication style": {
+      "notes": [
+        "Speaks with lowercase i, commas after every clause, and hearts after certain words, indicating a unique, consistent manner of speaking."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Kyan's role and state": {
+      "notes": [
+        "Operator responsible for requesting a wire transfer of 4,500, struggling with identity and procedure, aware of the archive and messages not being his."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Aung's role": {
+      "notes": [
+        "At the glass, holding a handoff note instructing 'do not match the suspicion, make him heard before money,' connected to the intimate messages and photograph.",
+        "Aung stands at the glass, silent but sending cryptic messages instructing 'make him heard, do not ask yet' and later 'come as yourself.'",
+        "Aung holds the broken glass position, communicates through archives, and instructs 'make him heard, do not ask yet,' indicating a mediator or gatekeeper role."
+      ],
+      "scenes": [
+        "c03s02",
+        "c04s01",
+        "c04s02"
+      ]
+    },
+    "Supervisor's role": {
+      "notes": [
+        "Holds and shows a performance improvement plan requiring conversion and authorizing physical punishment if the wire is not confirmed by a deadline."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Kyan's identity": {
+      "notes": [
+        "Kyan insists on coming 'as himself' rather than as a persona or Aung, emphasizing authenticity."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "Mark's role": {
+      "notes": [
+        "Mark holds a bag, does not send the wire, and encourages Kyan to 'come as yourself' with the wire amount mentioned."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "Kyan's identity assertion": {
+      "notes": [
+        "Kyan insists he is not 'her' and comes as himself, emphasizing authenticity."
+      ],
+      "scenes": [
+        "c04s02"
+      ]
+    },
+    "Mark's action": {
+      "notes": [
+        "Mark holds the bag but does not send it, and books a ride to the station, implying hesitation or delay."
+      ],
+      "scenes": [
+        "c04s02"
+      ]
+    }
+  },
+  "world": {
+    "Accounts": {
+      "notes": [
+        "Supervisors assign accounts to operators. Conversations are handed between shifts. An operator inheriting an account must read its archive of past messages before speaking as her."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "The persona": {
+      "notes": [
+        "'She' is a corporate account, not a person. A guidelines document fixes her style: commas and heart emojis, never semicolons; QA flags violations."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Scoring": {
+      "notes": [
+        "Operators are scored on conversion-to-deposit ratio. A dashboard raises CONVERSION OVERDUE alerts.",
+        "Operators go on performance improvement plans, including for discouraging a larger deposit or for a persona being 'too emotionally reciprocal'."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Tools and testing": {
+      "notes": [
+        "Supervisors A/B test vulnerability. Translation software mediates between operator and target."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Discipline": {
+      "notes": [
+        "Missing quota is punished by beatings in the next room while the office keeps working."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Persona Guidelines": {
+      "notes": [
+        "Strict rules for message composition including use of commas, heart emojis, prohibition of semicolons, controlled emotional reciprocity, and scripted intimacy as a funnel stage for conversion."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Translation Software": {
+      "notes": [
+        "Software mediates between English and compound-standard Burmese, translating messages to fit cultural idioms and enforcing persona style rules with QA annotations.",
+        "Automatically translates messages, sometimes softening or correcting words, but preserves intentional emotional details like lowercase letters after periods.",
+        "Software that preserves intentional emotional markers like lowercase 'i' and heart emojis while softening direct demands to maintain persona authenticity."
+      ],
+      "scenes": [
+        "c01s01",
+        "c01s03",
+        "c02s02"
+      ]
+    },
+    "Work Environment": {
+      "notes": [
+        "A call center compound where workers endure physical beatings as part of the procedure, continuous monitoring, and strict adherence to scripted interactions for financial conversion."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Communication guidelines": {
+      "notes": [
+        "Messages must use commas (never semicolons), include 1-3 heart emojis, limit emotional reciprocity to Stage Three before deposit, and follow a scripted rhythm."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "QA tool": {
+      "notes": [
+        "Software that flags emotional reciprocity levels and conversion language, calibrated differently per operator seniority."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "Translation software": {
+      "notes": [
+        "Translates between compound-standard Burmese and English with a slight delay and softens language nuances.",
+        "Automatically inserts cultural idioms like Burmese honorifics and enforces stylistic rules such as lowercase letters and heart emojis to maintain procedural intimacy."
+      ],
+      "scenes": [
+        "c01s02",
+        "c02s01"
+      ]
+    },
+    "Communication Procedures": {
+      "notes": [
+        "Strict rules govern operator communication, including punctuation, emotional reciprocity stages, and forbidden personal details; violations trigger alerts and supervisory intervention."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Emotional Reciprocity Stages": {
+      "notes": [
+        "A system that limits emotional expression based on operator status; senior operators have some permissions, conscripted operators do not."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Procedure": {
+      "notes": [
+        "A strict protocol requiring operators to convert emotional intimacy into financial deposits, monitored by software and supervisors, with physical punishment for failure.",
+        "There is a formal procedure involving a wire transfer, photo verification, and meetings; it can be broken or incomplete."
+      ],
+      "scenes": [
+        "c02s01",
+        "c03s03"
+      ]
+    },
+    "A/B vulnerability test": {
+      "notes": [
+        "A test run by the supervisor to determine if emotional dependence can be converted into a deposit."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "Emotional Manipulation Procedure": {
+      "notes": [
+        "A scripted interaction protocol involving emotional reciprocity, specific punctuation and emoji usage, and rules against defending image authenticity, designed to induce dependence and secure wire transfers."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "QA System": {
+      "notes": [
+        "Automated quality assurance flags deviations from the persona script, such as excessive emotional reciprocity, and notifies supervisors."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "A/B Test and Ratio": {
+      "notes": [
+        "Metrics used to measure Mark's dependence on Kyan's emotional disclosures, with a target ratio increasing from 0.11 to 0.45 to confirm procedure success."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Archive communication": {
+      "notes": [
+        "Messages include specific punctuation, lowercase 'i', and heart emojis which carry emotional and authenticity significance."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "Emotional dependence mapping": {
+      "notes": [
+        "Supervisor uses A/B testing and conversion ratios (0.45) to measure emotional vulnerability and procedural compliance."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "Physical discipline room": {
+      "notes": [
+        "Is empty but reserved for enforcing discipline if procedure or emotional boundaries are breached."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "Wire transfer": {
+      "notes": [
+        "An overdue transfer of 4,500 units is central to the test and communication; its request must follow precise emotional and procedural cues.",
+        "An amount of 4,500 is central to the dispute and procedure; its receipt is required to complete the procedure."
+      ],
+      "scenes": [
+        "c02s03",
+        "c03s03"
+      ]
+    },
+    "Communication style rules": {
+      "notes": [
+        "Messages include specific punctuation (commas) and stylistic elements (lowercase 'i', hearts) that carry meaning and are recognized by characters."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Procedure requirements": {
+      "notes": [
+        "The procedure requires asking for the wire transfer again despite emotional or situational complexities."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Procedure for wire transfer": {
+      "notes": [
+        "Requires the operator to ask for the wire personally; messages and requests must be authentic and not copied; failure to confirm wire by deadline can lead to physical punishment."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Archive system": {
+      "notes": [
+        "Contains six months of messages, intimate and unprocedural, linked to Aung, not Kyan.",
+        "Archives hold past instructions and intimate communication styles, used for handoffs and messaging."
+      ],
+      "scenes": [
+        "c03s02",
+        "c04s02"
+      ]
+    },
+    "Communication style": {
+      "notes": [
+        "Messages with commas and specific punctuation indicate tone and authority; lowercase i and hearts indicate personal or emotional tone."
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "procedure status": {
+      "notes": [
+        "The procedure survives the raid but is ultimately broken; conversion is required and punishment is pending or ready."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "wire transfer": {
+      "notes": [
+        "A wire transfer of 4,500 is overdue and central to the events; it is monitored and required for procedure completion."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "persona guidelines": {
+      "notes": [
+        "Persona guidelines, procedure manual, and shift-handoff notes are destroyed during the raid."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "Wire and photo": {
+      "notes": [
+        "A wire of 4,500 is overdue and a photo is false, both central to the conflict and communication."
+      ],
+      "scenes": [
+        "c04s02"
+      ]
+    },
+    "Supervisor's role": {
+      "notes": [
+        "Supervisor enforces conversion and punishment deadlines, striking the broken desk to signal readiness of punishment."
+      ],
+      "scenes": [
+        "c04s02"
+      ]
+    },
+    "Conversion and punishment": {
+      "notes": [
+        "Conversion is required by a specific time, with punishment ready if failed, indicating strict procedural rules."
+      ],
+      "scenes": [
+        "c04s02"
+      ]
+    },
+    "Supervisor": {
+      "notes": [
+        "An overseeing authority enforcing A/B testing protocols on communication, able to remotely punish Kyan for deviations."
+      ],
+      "scenes": [
+        "c04s03"
+      ]
+    },
+    "A/B Testing Protocol": {
+      "notes": [
+        "A system that tests emotional vulnerability variants in messaging, measuring response time and enforcing punishment if conversion targets are not met."
+      ],
+      "scenes": [
+        "c04s03"
+      ]
+    },
+    "Punishment": {
+      "notes": [
+        "Physical strikes and enforced presence on wet concrete as consequences for failure to comply with protocol."
+      ],
+      "scenes": [
+        "c04s03"
+      ]
+    },
+    "A/B test": {
+      "notes": [
+        "An active test by the supervisor to embed wire transfer requests inside emotional vulnerability, with failure resulting in punishment."
+      ],
+      "scenes": [
+        "c05s01"
+      ]
+    },
+    "Archive": {
+      "notes": [
+        "A system containing past messages and annotations, including instructions from Aung's voice guiding Kyan's behavior.",
+        "A digital or mediated system used to curate and script interactions between Kyan and Mark, including handoff notes and scripted emotional content."
+      ],
+      "scenes": [
+        "c05s01",
+        "c05s02"
+      ]
+    },
+    "Supervisor and procedure": {
+      "notes": [
+        "A controlling authority enforcing scripted interactions and A/B tests, including embedding requests for wire transfers within emotional vulnerability, with punishments for refusal."
+      ],
+      "scenes": [
+        "c05s02"
+      ]
+    },
+    "Supervisor's strike and punishment": {
+      "notes": [
+        "Physical discipline for refusal is enforced; refusal is a physical act causing a bruise; supervisor's strike occurred at 16:22."
+      ],
+      "scenes": [
+        "c05s03"
+      ]
+    },
+    "Procedures and communication": {
+      "notes": [
+        "Strict timing and messaging protocols exist (e.g., messages at 12:26, 16:19-16:52); emotional honesty ('feeling is real') is required to proceed with wire transfer; messages must avoid certain formats (no commas, hearts, lowercase i)."
+      ],
+      "scenes": [
+        "c05s03"
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "event": "At 08:15, Kyan takes over managing Mark's account from Aung.",
+      "scene": "c01s01"
+    },
+    {
+      "event": "The day before the scene, Kyan was put on a performance improvement plan for discouraging larger deposits.",
+      "scene": "c01s01"
+    },
+    {
+      "event": "08:15",
+      "scene": "c01s02"
+    },
+    {
+      "event": "08:15-09:00",
+      "scene": "c01s02"
+    },
+    {
+      "event": "09:47",
+      "scene": "c01s02"
+    },
+    {
+      "event": "10:11",
+      "scene": "c01s02"
+    },
+    {
+      "event": "10:17",
+      "scene": "c01s02"
+    },
+    {
+      "event": "10:18",
+      "scene": "c01s02"
+    },
+    {
+      "event": "10:23",
+      "scene": "c01s02"
+    },
+    {
+      "event": "At 10:23, supervisor demands Kyan confirm deposit amount or face physical punishment; Kyan sends messages between 10:24 and 10:31.",
+      "scene": "c01s03"
+    },
+    {
+      "event": "At 11:03, Kyan's conversion ratio is 0.11, indicating failure to secure the wire transfer on time.",
+      "scene": "c02s01"
+    },
+    {
+      "event": "Between 11:05 and 11:29, the supervisor escalates warnings, authorizes physical discipline, and demands confirmation of the wire transfer.",
+      "scene": "c02s01"
+    },
+    {
+      "event": "At 11:44, the dashboard shows a green alert indicating conversion recorded and ratio climbing to 0.45, marking the procedure's completion.",
+      "scene": "c02s02"
+    },
+    {
+      "event": "At 11:45, Aung's name appears in the archive header indicating her return.",
+      "scene": "c02s03"
+    },
+    {
+      "event": "At 12:08, the supervisor declares the A/B test complete with emotional dependence mapped and conversion ratio confirmed.",
+      "scene": "c02s03"
+    },
+    {
+      "event": "At 12:33, Kyan books a ride to the gas station without informing others.",
+      "scene": "c03s01"
+    },
+    {
+      "event": "At 12:37, Kyan sends a carefully punctuated and styled message to Mark about meeting without the wire and photos.",
+      "scene": "c03s01"
+    },
+    {
+      "event": "At 12:40, Mark replies expressing uncertainty about Kyan's identity and agreeing to come if the wire is not asked.",
+      "scene": "c03s01"
+    },
+    {
+      "event": "At 12:49, Kyan finds Mark at the gas station counter, initiating a direct conversation.",
+      "scene": "c03s01"
+    },
+    {
+      "event": "At 12:44, the supervisor threatens Kyan with consequences if he does not 'convert' within thirty minutes.",
+      "scene": "c03s01"
+    },
+    {
+      "event": "Wire amount 4,500 is overdue; performance improvement plan requires confirmation by 14:14.",
+      "scene": "c03s02"
+    },
+    {
+      "event": "Kyan has arranged a secret ride and meeting, not disclosed to Aung or supervisor.",
+      "scene": "c03s02"
+    },
+    {
+      "event": "Supervisor strikes the desk multiple times at 14:40, 15:06, 15:38 indicating escalating tension.",
+      "scene": "c03s03"
+    },
+    {
+      "event": "Kyan books a gray sedan ride to the station at 14:42, which remains booked throughout the scene.",
+      "scene": "c03s03"
+    },
+    {
+      "event": "A meeting is scheduled at the station around 14:44 and remains a focal point.",
+      "scene": "c03s03"
+    },
+    {
+      "event": "The compound's glass front shattered at 16:03, leading to a raid and eventual collapse by 16:15.",
+      "scene": "c04s01"
+    },
+    {
+      "event": "A meeting at the station is scheduled and remains fixed throughout the scene, with Kyan heading there at the end.",
+      "scene": "c04s01"
+    },
+    {
+      "event": "A meeting is scheduled at the station around 23:57 to 00:03, central to the unfolding events.",
+      "scene": "c04s02"
+    },
+    {
+      "event": "At 23:31, Variant B of vulnerability testing was activated with conversion target 4,500 and punishment threshold active.",
+      "scene": "c04s03"
+    },
+    {
+      "event": "Between 00:04 and 01:30, Kyan deviated from persona guidelines, was detected, ignored warnings, and was physically punished by the supervisor.",
+      "scene": "c04s03"
+    },
+    {
+      "event": "The wire transfer of 4,500 is overdue throughout the scene, creating ongoing pressure.",
+      "scene": "c05s01"
+    },
+    {
+      "event": "Kyan is physically punished for refusing to adopt the persona and comply with the wire transfer request.",
+      "scene": "c05s01"
+    },
+    {
+      "event": "Train arrives at 15:23; Mark steps off at 15:24; key conversation and refusal by Kyan occur between 15:26 and 17:36.",
+      "scene": "c05s02"
+    },
+    {
+      "event": "Occurred at 16:22, causing physical punishment to Kyan.",
+      "scene": "c05s03"
+    },
+    {
+      "event": "Wire overdue since April 12, 12:26, and archive began then.",
+      "scene": "c05s03"
+    },
+    {
+      "event": "Train left at 17:10 and again at 19:29.",
+      "scene": "c05s03"
+    }
+  ],
+  "threads": {
+    "Mark's conversion": {
+      "notes": [
+        "Kyan must convert Mark's emotional engagement into a financial deposit, balancing scripted intimacy and conversion urgency."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Kyan's Emotional Expression vs Procedure": {
+      "notes": [
+        "Kyan's choice to express forbidden intimacy in messages despite procedural rules."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Supervisor's Enforcement of Compliance": {
+      "notes": [
+        "Supervisor's threat of physical punishment to enforce deposit confirmation."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Next room": {
+      "notes": [
+        "A room next door with wet concrete where physical beatings occur as punishment for failure to convert the wire transfer."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "Conversion test": {
+      "notes": [
+        "The ongoing test of whether Kyan can convert Mark's emotional dependence into a deposit before physical discipline is applied."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "Mark's Doubt About Photographs": {
+      "notes": [
+        "Mark questions the reality of photographs and tests Kyan's responses, which is a key emotional trigger in the procedure."
+      ],
+      "scenes": [
+        "c02s02"
+      ],
+      "closed_in": "c02s02"
+    },
+    "Kyan's Internal Conflict": {
+      "notes": [
+        "Kyan struggles between following the manipulative procedure and his own feelings, unsure if he remains a procedural agent or has become a person."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Emotional vs procedural identity": {
+      "notes": [
+        "Kyan struggles to distinguish between his authentic self and the procedural role he must perform."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "Wire transfer authorization": {
+      "notes": [
+        "Mark will only send the wire to the persona who is not performing, creating tension over identity and authenticity."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "Discipline threat": {
+      "notes": [
+        "The supervisor threatens physical discipline if procedures or emotional boundaries are violated."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "Identity and trust": {
+      "notes": [
+        "Kyan and Mark both question each other's identities, unsure if they are 'her' or 'him'."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Wire transfer dilemma": {
+      "notes": [
+        "The overdue wire of 4,500 is central, with conflicting feelings about asking for it and its significance."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Supervisor's control": {
+      "notes": [
+        "The supervisor exerts pressure on Kyan to follow procedure and convert, creating tension."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Identity and authenticity of messages": {
+      "notes": [
+        "Messages intimate and unprocedural, written by Aung, copied by Kyan; photo is false representation."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Wire transfer confirmation": {
+      "notes": [
+        "Kyan must confirm the wire transfer personally to comply with procedure and avoid punishment."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Performance improvement plan enforcement": {
+      "notes": [
+        "Supervisor enforces plan requiring conversion and authorizing physical punishment if wire is not confirmed."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Disputed wire transfer": {
+      "notes": [
+        "The wire of 4,500 is disputed, unpaid, and central to the conflict."
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "Photo authenticity": {
+      "notes": [
+        "The photo is claimed false by some but acknowledged as hers by Kyan; its authenticity is questioned."
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "Identity and truth": {
+      "notes": [
+        "Kyan insists he is not the person accused, seeking to be heard as himself and to uncover the truth."
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "false photo": {
+      "notes": [
+        "A false photo is part of the open message and archive, its authenticity is neither denied nor confirmed by Kyan."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "overdue wire": {
+      "notes": [
+        "The overdue wire of 4,500 remains unpaid and central to the conflict."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "procedure broken": {
+      "notes": [
+        "The procedure is broken after the raid and conversion attempt fails, with punishment ready."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    },
+    "False photo and overdue wire": {
+      "notes": [
+        "The false photo and overdue wire of 4,500 are key unresolved issues driving the narrative tension."
+      ],
+      "scenes": [
+        "c04s02"
+      ]
+    },
+    "Conversion and punishment deadline": {
+      "notes": [
+        "The impending conversion requirement and punishment deadline create urgency and conflict."
+      ],
+      "scenes": [
+        "c04s02"
+      ]
+    },
+    "Wire Transfer Request": {
+      "notes": [
+        "The overdue wire transfer of 4,500 remains unconfirmed and embedded within emotional messages."
+      ],
+      "scenes": [
+        "c04s03"
+      ]
+    },
+    "Meeting at Station": {
+      "notes": [
+        "A ride and meeting at the station is scheduled but unresolved as Kyan approaches without confirming the wire."
+      ],
+      "scenes": [
+        "c04s03"
+      ]
+    },
+    "Wire transfer request": {
+      "notes": [
+        "The demand for a 4,500 wire transfer embedded in emotional manipulation remains unresolved.",
+        "The overdue wire transfer of 4,500 is a central unresolved issue, with Kyan refusing to ask for it until Mark confirms the feeling is real."
+      ],
+      "scenes": [
+        "c05s01",
+        "c05s02"
+      ]
+    },
+    "False photo accusation": {
+      "notes": [
+        "Mark accuses Kyan of a false photo, which Kyan denies, asserting he is not Aung or responsible for the archive or handoff."
+      ],
+      "scenes": [
+        "c05s01"
+      ]
+    },
+    "Authenticity of interaction": {
+      "notes": [
+        "Kyan and Mark grapple with whether their six-month interaction was genuine or merely procedural, with Kyan asserting his own identity separate from Aung."
+      ],
+      "scenes": [
+        "c05s02"
+      ]
+    },
+    "Wire transfer of 4,500": {
+      "notes": [
+        "Overdue for six months; requires emotional confirmation before sending."
+      ],
+      "scenes": [
+        "c05s03"
+      ]
+    },
+    "Emotional honesty and procedure conflict": {
+      "notes": [
+        "Kyan challenges procedural norms by prioritizing emotional truth over protocol."
+      ],
+      "scenes": [
+        "c05s03"
+      ]
+    }
+  }
+}

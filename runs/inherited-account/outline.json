@@ -1,0 +1,91 @@
+{
+  "title": "Conversion Overdue",
+  "logline": "A trafficked scam operator on the Myanmar border inherits a fabricated romantic persona and engages in a complex, intimate con with an American man who knows he's being conned but remains captivated, blurring the lines between deceit and genuine connection.",
+  "acts": [
+    {
+      "title": "Act 1: Inheritance of a Lie",
+      "chapters": [
+        {
+          "title": "Assignment and Immersion",
+          "scenes": [
+            {
+              "beat": "The operator, Kyan, begins his shift and is assigned a romantic account already six months deep; he reads the entire archive of messages to understand the fabricated relationship with the American, Mark."
+            },
+            {
+              "beat": "Kyan studies the persona guidelines and notices subtle language quirks, identifying the previous operator's unique typing style and emotional inflections."
+            },
+            {
+              "beat": "In his first unscripted message as 'her,' Kyan includes an honest, personal detail that breaks protocol; Mark immediately notices and responds with delight, deepening his emotional investment."
+            }
+          ]
+        },
+        {
+          "title": "Cracks in the Facade",
+          "scenes": [
+            {
+              "beat": "Mark continues to withhold deposits, prompting supervisors to flag Kyan's conversion ratio, increasing pressure on him at the compound."
+            },
+            {
+              "beat": "Mark questions the authenticity of the photographs, tactfully revealing his suspicion without confrontation; Kyan and Mark mutually sustain the illusion despite this tension."
+            },
+            {
+              "beat": "The previous operator, Aung, unexpectedly returns to the account, creating a complicated dynamic between him, Kyan, and Mark."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Act 2: Escalation and Entanglement",
+      "chapters": [
+        {
+          "title": "Jealousy and Vulnerability",
+          "scenes": [
+            {
+              "beat": "Kyan, grappling with the oppressive environment and his growing emotional risk, arranges a risky real-world meeting with Mark, seeking to reconcile the fractured personas and his own identity."
+            },
+            {
+              "beat": "Mark arrives and confronts Kyan, revealing his suspicions about the authenticity of the photographs and messages, and discloses that many cherished messages were actually from Aung, complicating their relationship."
+            },
+            {
+              "beat": "Kyan and Mark engage in a tense, emotionally charged dialogue about truth, deception, and connection, while Aung's presence looms, highlighting the tangled dynamics between the three."
+            }
+          ]
+        },
+        {
+          "title": "Fractures and Consequences",
+          "scenes": [
+            {
+              "beat": "The fallout from the confrontation leads to a partial collapse of the call center compound amid a violent raid, scattering Kyan, Aung, and other operators, forcing them to confront their roles and identities outside the controlled environment."
+            },
+            {
+              "beat": "Kyan and Aung, isolated from the compound, reflect on their intertwined roles in the scam and their personal conflicts, deepening their internal struggles with identity and deception."
+            },
+            {
+              "beat": "Supervisors attempt to reassert control remotely, introducing A/B testing on emotional vulnerability in messages, increasing pressure on Kyan and Aung to manipulate Mark despite the chaos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Act 3: Reckoning and Revelation",
+      "chapters": [
+        {
+          "title": "Collapse and Confrontation",
+          "scenes": [
+            {
+              "beat": "Kyan prepares for a pivotal confrontation with Mark, intending to reveal his true self beyond the fabricated persona, while grappling with the fractured relationships and the fallout from the raid. The scene explores Kyan's internal conflict between vulnerability and survival as he anticipates Mark's reaction."
+            },
+            {
+              "beat": "Mark and Kyan engage in a raw, emotionally charged exchange where truths about their identities, deceptions, and desires surface. The conversation blurs the lines between con and genuine connection, with both characters confronting their complicity and loneliness."
+            },
+            {
+              "beat": "In the aftermath of their confrontation, Kyan and Mark face an uncertain future. The scene leaves their relationship suspended, reflecting on the impact of the scam, the possibility of redemption, and the enduring ambiguity of their bond amid the shattered call center environment."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

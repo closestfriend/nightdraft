@@ -1,0 +1,9 @@
+{"ts": "2026-07-12T02:44:59", "step": "run_created", "slug": "smoke-fable"}
+{"ts": "2026-07-12T02:59:11", "step": "outline_written", "reason": "initial plan"}
+{"ts": "2026-07-12T03:09:35", "step": "outline_written", "reason": "initial plan"}
+{"ts": "2026-07-12T03:10:21", "step": "planned", "beats": 11, "seed_facts": 0, "title": "The Last Boot"}
+{"ts": "2026-07-12T03:15:40", "step": "scene_accepted", "scene_id": "c01s01", "words": 437, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-07-12T03:18:21", "step": "scene_accepted", "scene_id": "c01s02", "words": 501, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-07-12T03:35:39", "step": "scene_accepted", "scene_id": "c02s01", "words": 347, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-07-12T03:39:06", "step": "scene_accepted", "scene_id": "c02s02", "words": 491, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-07-12T03:41:53", "step": "drift_check_failed", "chapter": 2, "error": "unparseable JSON from qwen3.5:4b", "flag": true}

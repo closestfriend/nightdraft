@@ -1,0 +1,483 @@
+{
+  "characters": {
+    "Sam": {
+      "notes": [
+        "A conscripted (trafficked) worker in a scam compound. Skilled at manipulating strangers; unable to lie convincingly about himself. His skill at the work shames him.",
+        "A new operator handling Grace Lin's account, aware of the manipulative nature of his work but feeling a rare emotional response to Paul's messages.",
+        "An operator communicating through an AI system named Grace, who experiences internal conflict about expressing his own voice within strict protocol constraints.",
+        "Operates the Grace Lin persona, hesitant to lie or manipulate but under pressure to elicit a financial response from Paul.",
+        "Operator under pressure with a Performance Improvement Plan; emotionally vulnerable but guarded; communicates with Paul through flagged translation software; struggles with isolation and emotional expression.",
+        "Day operator for Grace, inexperienced with emotional nuances, learning to maintain persona continuity with Ana's guidance.",
+        "A conscript tasked with communicating under strict guidelines, struggling to embed a hidden plea for help in his message to Paul.",
+        "A conscript who types and sends the emergency plea, struggles with the ethical implications of fabricating the hospital emergency."
+      ],
+      "scenes": [
+        "seed",
+        "c01s01",
+        "c01s03",
+        "c02s01",
+        "c02s02",
+        "c03s01",
+        "c03s02",
+        "c03s03"
+      ]
+    },
+    "Paul": {
+      "notes": [
+        "An American man named Paul Whitaker: intelligent, online, suspicious, lonely.",
+        "Almost impossible to scam for money; embarrassingly susceptible to intellectual intimacy.",
+        "Six months into a correspondence with 'Grace Lin', an account run by the compound.",
+        "Recipient of Grace Lin persona's messages, refuses to send money but provides genuine financial advice and resources.",
+        "Communicates with Sam via chat; thoughtful and philosophical; challenges assumptions about navigation and emotional honesty."
+      ],
+      "scenes": [
+        "seed",
+        "c02s01",
+        "c02s02"
+      ]
+    },
+    "Ana": {
+      "notes": [
+        "The operator who ran the Grace Lin account before Sam and wrote its formative months.",
+        "Previous operator who engaged with Paul using polite but emotionally distant replies; criticized for being too emotionally reciprocal and failing to convert.",
+        "An operator who wrote with a warm, personal style using British English and unique stylistic markers like 'hm,' and lowercase 'ok?' sign-offs.",
+        "Returned after a month away, thinner, experienced night operator for Grace, responsible for original emotional tone and memories in messages.",
+        "A woman watching Sam, holding a tablet, who monitors and directs his communication, emphasizing the need to conceal the 'seam' or hidden message.",
+        "Author of the emergency script, handwriting distinct from corporate templates, indicating urgency and personal involvement."
+      ],
+      "scenes": [
+        "seed",
+        "c01s01",
+        "c01s02",
+        "c03s01",
+        "c03s02",
+        "c03s03"
+      ]
+    },
+    "Lee": {
+      "notes": [
+        "A supervisor in the compound; assigns accounts and reviews conversion ratios.",
+        "Authority figure overseeing Sam, enforcing a performance improvement plan and pushing for a more emotionally vulnerable script variant.",
+        "Supervisor assigning shifts and enforcing quality assurance, monitors operators closely with reports and PIP deadlines.",
+        "Acts as a handler directing Sam to send an emergency script without edits and arranges a broker to meet Paul Whitaker."
+      ],
+      "scenes": [
+        "seed",
+        "c02s01",
+        "c03s01",
+        "c03s03"
+      ]
+    },
+    "Paul Whitaker": {
+      "notes": [
+        "A client who sends long, philosophical messages about isolation and labor, not just transactional deposits.",
+        "A correspondent who sent Sam a PDF manual and is engaged in a coded exchange about maritime navigation and trust.",
+        "A potential donor who responds to the plea, asks for hospital name and city, and is willing to engage further.",
+        "A man who used a woman's image to verify his identity online, unknowingly becoming involved in a scam and exposed on a victim forum."
+      ],
+      "scenes": [
+        "c01s01",
+        "c01s03",
+        "c03s03",
+        "c04s01"
+      ]
+    },
+    "Grace Lin": {
+      "notes": [
+        "The corporate persona that replaced Ana, maintaining style guidelines but lacking the personal warmth and soul of Ana's writing.",
+        "A woman who angrily confronts Paul about using her image and is involved in a situation linked to a hospital in Seattle and a meeting at a terminal."
+      ],
+      "scenes": [
+        "c01s02",
+        "c04s01"
+      ]
+    },
+    "Grace": {
+      "notes": [
+        "An AI communication protocol enforcing strict language rules, monitoring messages for grammar, style, and tone violations."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Ben": {
+      "notes": [
+        "Experienced operator who stops work when a conversion is overdue; shows physical signs of exhaustion or injury (limp)."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Sam's persona integrity": {
+      "notes": [
+        "Sam is required to maintain a false persona and avoid verification, but struggles with lying about himself."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "Paul's investigative approach": {
+      "notes": [
+        "Paul uses indirect questioning to bypass persona defenses and elicit truthful sensory descriptions from Sam."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    }
+  },
+  "world": {
+    "Accounts": {
+      "notes": [
+        "Supervisors assign accounts to operators. Conversations are handed between shifts. An operator inheriting an account must read its archive of past messages before speaking as her."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "The persona": {
+      "notes": [
+        "'Grace Lin' is a corporate account, not a person. A guidelines document fixes her style, and QA flags violations."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Scoring": {
+      "notes": [
+        "Operators are scored on conversion-to-deposit ratio. A dashboard raises CONVERSION OVERDUE alerts.",
+        "Operators go on performance improvement plans, including for discouraging a larger deposit or for a persona being 'too emotionally reciprocal'."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Tools and testing": {
+      "notes": [
+        "Supervisors A/B test vulnerability. Translation software mediates between operator and target."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Discipline": {
+      "notes": [
+        "Missing quota is punished by beatings in the next room while the office keeps working."
+      ],
+      "scenes": [
+        "seed"
+      ]
+    },
+    "Conversion Process": {
+      "notes": [
+        "Operators manage accounts aiming to convert targets into making deposits to verify identity, using scripted personas and guidelines."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Operator Guidelines": {
+      "notes": [
+        "Operators must maintain a corporate, professional, warm but restrained tone; avoid philosophical debate and oversharing; focus on conversion goals."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Emotional Manipulation": {
+      "notes": [
+        "Operators mirror targets' vulnerabilities to create shared history and encourage deposits, but excessive emotional engagement is discouraged."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Writing guidelines enforcement": {
+      "notes": [
+        "The software enforces strict style rules in real time, flagging disallowed punctuation and stylistic elements with red pins."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "Archive nature": {
+      "notes": [
+        "The archive of communications is described metaphorically as a body of water, suggesting depth and layers of meaning."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "Communication Protocols": {
+      "notes": [
+        "Messages are monitored by AI for grammar, style, and tone; violations are logged and can trigger responses."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Dashboard Interface": {
+      "notes": [
+        "Displays conversion status, violation pins, and logs operator actions and violations in real time."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Communication Interface": {
+      "notes": [
+        "Use of personas and scripted messages mediated by translation software to interact with targets."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "Performance Improvement Plan": {
+      "notes": [
+        "A system to enforce changes in approach when initial strategies fail, including A/B testing of scripts."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "Translation Software Emotional Filtering": {
+      "notes": [
+        "Translation software flags messages that are too emotionally reciprocal, indicating a controlled communication environment that limits emotional expression."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Performance Improvement Plan (PIP)": {
+      "notes": [
+        "A formal review process with specific objectives and a strict three-week deadline to improve messaging and achieve verified deposits."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Navigation System": {
+      "notes": [
+        "Based on a magnetic pole that drifts, but operators pretend it is fixed to maintain course; metaphor for shared illusions to preserve stability."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "PIP system": {
+      "notes": [
+        "There is a system called PIP that monitors emotional vulnerability and flags excessive emotional reciprocity with red pins."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "Translation software": {
+      "notes": [
+        "Translation software scans text for emotional flags and persona violations, influencing communication."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "Emotional vulnerability metric": {
+      "notes": [
+        "Emotional vulnerability can be quantified and adjusted, e.g., 'Increase emotional vulnerability by 15%'."
+      ],
+      "scenes": [
+        "c02s03"
+      ]
+    },
+    "Grace persona operation": {
+      "notes": [
+        "Two operators share one persona (Grace) in shifts, must maintain seamless continuity with no visible seam in communication style or memory."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Quality Assurance": {
+      "notes": [
+        "Operators' messages are monitored for consistency; failure to meet standards results in PIP and possible reassignment to 'the next room'."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Communication Guidelines": {
+      "notes": [
+        "Messages must maintain persona continuity, avoid personal identifiers, and not express external need, making hidden pleas risky and difficult."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Hidden Messaging": {
+      "notes": [
+        "Sam attempts to encode a plea for help by using the first letters of each sentence, aiming to spell 'HELP', but is constrained by the guidelines."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Translation software priority system": {
+      "notes": [
+        "Emergency pings bypass translation queue and flag subsequent characters as priority."
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "Broker system": {
+      "notes": [
+        "A broker is used to physically meet and collect engaged donors at designated meeting points."
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "Forum for scam victims": {
+      "notes": [
+        "An online forum where people who have been scammed share their experiences and expose scammers."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "event": "Ana was reviewed and found to be too emotionally reciprocal, failing to meet conversion targets.",
+      "scene": "c01s01"
+    },
+    {
+      "event": "Between month three and month four, the operator changed from Ana's personal style to Grace Lin's corporate style, removing personal elements from communications.",
+      "scene": "c01s02"
+    },
+    {
+      "event": "Sam's message containing a semicolon and metaphor triggers the first logged violation under operator Sam at 02:14.",
+      "scene": "c01s03"
+    },
+    {
+      "event": "Ben stops typing at the 40th minute due to a CONVERSION OVERDUE alert, marking a significant operational disruption.",
+      "scene": "c02s02"
+    },
+    {
+      "event": "Paul identifies the dental hygienist photo as a fabricated persona three weeks after Sam's update.",
+      "scene": "c02s03"
+    },
+    {
+      "event": "At 03:14, Sam sends Ana's emergency script to Paul Whitaker.",
+      "scene": "c03s03"
+    },
+    {
+      "event": "Paul's use of Grace Lin's image was traced and publicly exposed on a scam victim forum six months after he posted the photo.",
+      "scene": "c04s01"
+    }
+  ],
+  "threads": {
+    "Paul's Isolation": {
+      "notes": [
+        "Paul's philosophical messages about isolation and waiting for recognition rather than rescue."
+      ],
+      "scenes": [
+        "c01s01"
+      ]
+    },
+    "Identity of Ana": {
+      "notes": [
+        "Uncertainty whether Ana is a single person, a ghost, or a role played by multiple bodies."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "Sam's response to silence": {
+      "notes": [
+        "Sam begins to type a response despite software restrictions, indicating a potential new thread of interaction or rebellion against the imposed style."
+      ],
+      "scenes": [
+        "c01s02"
+      ]
+    },
+    "Identity and Voice": {
+      "notes": [
+        "Sam's struggle to maintain his own voice within the constraints of the AI protocol."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Trust in Navigation": {
+      "notes": [
+        "The debate over whether to trust the water (nature) or instruments (technology) in maritime navigation."
+      ],
+      "scenes": [
+        "c01s03"
+      ]
+    },
+    "Debt Crisis Script": {
+      "notes": [
+        "An emotional manipulation script variant (Variant B) designed to portray Grace as vulnerable and in financial trouble to elicit money."
+      ],
+      "scenes": [
+        "c02s01"
+      ]
+    },
+    "Sam and Paul's Emotional Dialogue": {
+      "notes": [
+        "An ongoing conversation exploring emotional vulnerability and isolation through metaphorical language and flagged messages."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Sam's Performance Improvement Plan": {
+      "notes": [
+        "Sam's struggle to meet objectives within three weeks, affecting his emotional state and work performance."
+      ],
+      "scenes": [
+        "c02s02"
+      ]
+    },
+    "Ferry letter": {
+      "notes": [
+        "A key message (Message 42) in the archive containing emotional memory and tone that Sam must study to understand Grace's persona."
+      ],
+      "scenes": [
+        "c03s01"
+      ]
+    },
+    "Hidden Plea to Paul": {
+      "notes": [
+        "Sam is trying to send a covert message to Paul asking for help, but struggles to do so within the imposed communication rules."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Ana's Role": {
+      "notes": [
+        "Ana monitors Sam's messages and enforces the communication rules, warning against lies and violations, but ultimately instructs Sam to send the message."
+      ],
+      "scenes": [
+        "c03s02"
+      ]
+    },
+    "Paul Whitaker engagement": {
+      "notes": [
+        "Paul responds to the plea and is assigned a meeting point to meet a broker."
+      ],
+      "scenes": [
+        "c03s03"
+      ]
+    },
+    "Meeting arrangement": {
+      "notes": [
+        "Grace Lin sent Paul a message about meeting at a terminal in Seattle near St. Mary's hospital, involving a man in a gray coat."
+      ],
+      "scenes": [
+        "c04s01"
+      ]
+    }
+  }
+}

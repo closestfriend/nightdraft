@@ -1,0 +1,20 @@
+{
+  "host": null,
+  "glue_model": "openai/gpt-4.1-mini",
+  "glue_think": null,
+  "prose_model": "thinkingmachines/inkling-small",
+  "scene_words": 650,
+  "chapters": 4,
+  "scenes_per_chapter": 3,
+  "drift_every_chapters": 2,
+  "tool_call_cap": 4,
+  "num_ctx": 8192,
+  "prose_temperature": 0.8,
+  "glue_temperature": 0.2,
+  "request_timeout_s": 900,
+  "prose_think": false,
+  "provider": "openrouter",
+  "openrouter_base": null,
+  "max_output_tokens": 4500,
+  "budget_usd": 1.0
+}
