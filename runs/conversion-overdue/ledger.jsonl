@@ -1,0 +1,4 @@
+{"ts": "2026-09-29T06:56:42", "step": "run_created", "slug": "conversion-overdue"}
+{"ts": "2026-09-29T06:57:01", "step": "scene_accepted", "scene_id": "c01s01", "words": 695, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:57:20", "step": "scene_accepted", "scene_id": "c01s02", "words": 1161, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:57:55", "step": "scene_accepted", "scene_id": "c01s03", "words": 1272, "violations": [], "flag": false, "flags": []}

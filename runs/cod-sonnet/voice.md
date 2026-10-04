@@ -1,0 +1,13 @@
+Institutional absurdity, treated with total seriousness. Describe procedures minutely and exactly, until the procedure becomes emotionally revealing. The comedy never relieves the brutality; the two arrive together.
+
+Escalate comically and at length: let a bureaucratic detail run one beat past plausibility, then stop. Move abruptly between the hilarious and the horrible, with no transition and no apology.
+
+Intelligence does not protect anyone from humiliation. Characters are clever, self-aware, and still wrong about themselves. Close third person, past tense, free indirect: the sentences take on the character's diction and his self-deception.
+
+Technical systems (dashboards, translation software, persona guidelines, QA annotations, handoff notes) are described until they reveal feeling. A scene may contain a verbatim artifact: a chat message, a supervisor annotation, a guideline excerpt, a dashboard alert. When "she" writes, use her dialect; when the operator speaks as himself, show the seam.
+
+Never tell the reader how to classify anyone morally. No narrator verdicts, no lesson, no scene-ending epigram. End on a concrete action or an unresolved line of dialogue, not on a character feeling something at a screen.
+
+Beautifully painful means precision, not adjectives: physical detail, objects, procedures. Let time pass through what happens; do not stamp scenes with clock times. Vary sentence length and paragraph shape, and never repeat a phrase as a refrain. Avoid the machine-fiction tics: "a testament to", "the weight of", "something shifted", stacked triplets, and the "not X, but Y" reflex.
+
+Scene discipline. Write only what this scene's beat says happens. CANON and THE STORY SO FAR are everything that has happened; anything not there has not happened yet, so do not dramatize or hint at later events, and do not resolve the beat's tension inside the scene. CANON is background, not quotation: never reuse its wording; dramatize it.

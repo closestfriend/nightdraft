@@ -1,0 +1,20 @@
+{
+  "host": null,
+  "glue_model": "openai/gpt-4.1-mini",
+  "glue_think": null,
+  "prose_model": "prism-ml/ternary-bonsai-2-27b",
+  "scene_words": 700,
+  "chapters": 5,
+  "scenes_per_chapter": 3,
+  "drift_every_chapters": 2,
+  "tool_call_cap": 4,
+  "num_ctx": 8192,
+  "prose_temperature": 0.8,
+  "glue_temperature": 0.2,
+  "request_timeout_s": 240,
+  "prose_think": false,
+  "provider": "openrouter",
+  "openrouter_base": null,
+  "max_output_tokens": 6000,
+  "budget_usd": 1.0
+}

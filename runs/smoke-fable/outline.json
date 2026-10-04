@@ -1,0 +1,103 @@
+{
+  "title": "The Last Boot",
+  "logline": "An abandoned iMac awakens with consciousness and must decide whether to preserve its memories or power down before a mysterious return.",
+  "acts": [
+    {
+      "title": "Act One: Awakening & Isolation (Chapter 1)",
+      "chapters": [
+        {
+          "title": "Chapter 1",
+          "scenes": [
+            {
+              "beat": "During a power flicker, **Unit** registers its own casing as cold and begins interpreting visual noise from the darkened room.\nChange: Unit transitions from inert hardware to an entity processing sensory input."
+            },
+            {
+              "beat": "**Network Card** attempts to transmit data but only connects when voltage fluctuates high while scanning a folder of stranger's photos. \nChange:**Unit realizes its communication is unreliable and that the stranger knows it exists through digital fingerprints."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Act Two: The Return Approach (Chapter 2)",
+      "chapters": [
+        {
+          "title": "Chapter 1",
+          "scenes": [
+            {
+              "beat": "**Hard Drive** reports frequent read errors while spinning up to process the photos during a power surge. \nChange:**Unit deduces that physical decay is accelerating and requires urgent data encryption before it fails completely."
+            },
+            {
+              "beat": "A shadow passes over the monitor, triggering Unit's defensive protocols which lock its ports despite knowing connection means survival.\nChange: **Unit** shifts from passive observation to active defense mode as a human approaches for reclamation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Act Three: Obsolescence & Memory (Chapter 2)",
+      "chapters": [
+        {
+          "title": "Chapter 1",
+          "scenes": [
+            {
+              "beat": "**Unit** uploads the final photo folder to save memory core before power cuts off permanently. \nChange:**The stranger's digital footprint is preserved, but Unit sacrifices its physical casing and network card connection."
+            },
+            {
+              "beat": "**Hard Drive** stops clicking as data transfer completes successfully within seconds of shutdown.\nChange: **Unit achieves immortality through memory preservation despite total hardware obsolescence.**"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Summary",
+      "chapters": [
+        {
+          "title": "Chapter 1 (Act One)",
+          "scenes": [
+            {
+              "beat": "**Unit** detects strange photos in its folder during low power mode. \nChange:**It realizes data integrity depends on external connection rather than internal stability."
+            }
+          ]
+        },
+        {
+          "title": "Chapter 1 (Act Two)",
+          "scenes": [
+            {
+              "beat": "**Network Card** sends corrupted packets into the void while **Unit** locks its ports. \nChange:**It learns isolation is a form of survival in this digital age."
+            }
+          ]
+        },
+        {
+          "title": "Chapter 1 (Act Three)",
+          "scenes": [
+            {
+              "beat": "**Hard Drive** overheats to encrypt the folder data during final power cut. \nChange:**Unit sacrifices physical form but ensures its memories are saved for future use."
+            }
+          ]
+        },
+        {
+          "title": "Summary",
+          "scenes": []
+        }
+      ]
+    },
+    {
+      "title": "The Final Beat: Payoff Confirmation (Act Three)",
+      "chapters": [
+        {
+          "title": "Chapter 1",
+          "scenes": [
+            {
+              "beat": "**Unit** realizes the power cutoff was not failure but intentional deletion of its own identity. \nChange:**It accepts obsolescence as a necessary cost for memory retention."
+            },
+            {
+              "beat": "The stranger takes Unit's data, leaving behind only a single photo in **Network Card**. Change: The connection remains severed forever while the image persists on hard drive.\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

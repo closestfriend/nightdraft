@@ -1,0 +1,31 @@
+{"ts": "2026-09-29T06:43:52", "step": "run_created", "slug": "inherited-account"}
+{"ts": "2026-09-29T06:44:28", "step": "scene_accepted", "scene_id": "c01s01", "words": 1140, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:45:04", "step": "scene_accepted", "scene_id": "c01s02", "words": 1816, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:45:35", "step": "scene_accepted", "scene_id": "c01s03", "words": 802, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:46:56", "step": "scene_accepted", "scene_id": "c02s01", "words": 1307, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:47:16", "step": "scene_accepted", "scene_id": "c02s02", "words": 1005, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:47:35", "step": "scene_accepted", "scene_id": "c02s03", "words": 1232, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:47:45", "step": "outline_written", "reason": "drift correction after ch2"}
+{"ts": "2026-09-29T06:47:45", "step": "drift_check", "chapter": 2, "on_course": false, "diagnosis": "The written chapters have expanded the depiction of the oppressive call center environment and Kyan's internal moral conflict, emphasizing physical abuse and procedural controls more than the outline suggested. The outline's planned beats about Mark withholding deposits, questioning photos, and Aung's return creating a complicated dynamic have been partially merged or shifted. The story has deepened Kyan's emotional risk-taking and supervisor pressure earlier, but has not yet introduced Mark's suspicions or the nuanced dynamic with Aung as a returning operator. To realign, upcoming scenes should incorporate Mark's growing doubts, his subtle challenges to the persona, and the complex relationship triangle between Kyan, Aung, and Mark, while maintaining the heightened tension and Kyan's internal conflict established so far.", "beats_revised": ["c03s01", "c03s02", "c03s03", "c04s01", "c04s02", "c04s03", "c05s01", "c05s02", "c05s03"], "flag": true}
+{"ts": "2026-09-29T06:48:10", "step": "scene_accepted", "scene_id": "c03s01", "words": 950, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:48:44", "step": "scene_accepted", "scene_id": "c03s02", "words": 2063, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:49:01", "step": "scene_accepted", "scene_id": "c03s03", "words": 1084, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:49:23", "step": "scene_failed", "scene_id": "c04s01", "error": "OllamaError: reply cut off at max_output_tokens=6000 (finish_reason=length); raise max_output_tokens, shorten the ask, or disable reasoning", "flag": true}
+{"ts": "2026-09-29T06:49:23", "step": "run_halted", "reason": "model unavailable", "scene_id": "c04s01", "flag": true}
+{"ts": "2026-09-29T06:50:12", "step": "scene_accepted", "scene_id": "c04s01", "words": 1276, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:50:24", "step": "scene_failed", "scene_id": "c04s02", "error": "OllamaError: reply cut off at max_output_tokens=3500 (finish_reason=length); raise max_output_tokens, shorten the ask, or disable reasoning", "flag": true}
+{"ts": "2026-09-29T06:50:24", "step": "run_halted", "reason": "model unavailable", "scene_id": "c04s02", "flag": true}
+{"ts": "2026-09-29T06:51:08", "step": "scene_accepted", "scene_id": "c04s02", "words": 1438, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:51:33", "step": "scene_accepted", "scene_id": "c04s03", "words": 1416, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:51:45", "step": "outline_written", "reason": "drift correction after ch4"}
+{"ts": "2026-09-29T06:51:45", "step": "drift_check", "chapter": 4, "on_course": false, "diagnosis": "The story has evolved to emphasize Kyan's personal agency and the collapsing procedural environment more than the original outline's focus on the layered dynamics between Kyan, Aung, and Mark within the controlled call center. The raid and compound collapse have already occurred earlier than planned, and the emotional confrontations are more fragmented and unresolved. The original plan's Act 3, focusing on Kyan's personal revelations and the fraught parting with Mark, needs to be adjusted to reflect the story's current trajectory, which highlights Kyan's struggle for authenticity amid chaos and the ambiguous roles of Aung and Mark.", "beats_revised": ["c05s01", "c05s02", "c05s03"], "flag": true}
+{"ts": "2026-09-29T06:52:12", "step": "scene_failed", "scene_id": "c05s01", "error": "OllamaError: reply cut off at max_output_tokens=4500 (finish_reason=length); raise max_output_tokens, shorten the ask, or disable reasoning", "flag": true}
+{"ts": "2026-09-29T06:52:12", "step": "run_halted", "reason": "model unavailable", "scene_id": "c05s01", "flag": true}
+{"ts": "2026-09-29T06:52:44", "step": "scene_failed", "scene_id": "c05s01", "error": "OllamaError: reply cut off at max_output_tokens=4500 (finish_reason=length); raise max_output_tokens, shorten the ask, or disable reasoning", "flag": true}
+{"ts": "2026-09-29T06:52:44", "step": "run_halted", "reason": "model unavailable", "scene_id": "c05s01", "flag": true}
+{"ts": "2026-09-29T06:53:01", "step": "scene_failed", "scene_id": "c05s01", "error": "OllamaError: reply cut off at max_output_tokens=4500 (finish_reason=length); raise max_output_tokens, shorten the ask, or disable reasoning", "flag": true}
+{"ts": "2026-09-29T06:53:01", "step": "run_halted", "reason": "model unavailable", "scene_id": "c05s01", "flag": true}
+{"ts": "2026-09-29T06:53:25", "step": "scene_accepted", "scene_id": "c05s01", "words": 1228, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:53:55", "step": "scene_accepted", "scene_id": "c05s02", "words": 1225, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:54:35", "step": "scene_accepted", "scene_id": "c05s03", "words": 1489, "violations": [], "flag": false, "flags": []}
+{"ts": "2026-09-29T06:54:36", "step": "draft_complete", "scenes": 15}

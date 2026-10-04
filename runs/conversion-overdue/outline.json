@@ -1,0 +1,91 @@
+{
+  "title": "Conversion Overdue",
+  "logline": "A trafficked scam operator on the Myanmar border inherits a fabricated romantic persona and engages in a complex, intimate con with an American man who knows he's being conned but remains captivated, blurring the lines between deceit and genuine connection.",
+  "acts": [
+    {
+      "title": "Act 1: Inheritance of a Lie",
+      "chapters": [
+        {
+          "title": "Assignment and Immersion",
+          "scenes": [
+            {
+              "beat": "The operator, Kyan, begins his shift and is assigned a romantic account already six months deep; he reads the entire archive of messages to understand the fabricated relationship with the American, Mark."
+            },
+            {
+              "beat": "Kyan studies the persona guidelines and notices subtle language quirks, identifying the previous operator's unique typing style and emotional inflections."
+            },
+            {
+              "beat": "In his first unscripted message as 'her,' Kyan includes an honest, personal detail that breaks protocol; Mark immediately notices and responds with delight, deepening his emotional investment."
+            }
+          ]
+        },
+        {
+          "title": "Cracks in the Facade",
+          "scenes": [
+            {
+              "beat": "Mark continues to withhold deposits, prompting supervisors to flag Kyan's conversion ratio, increasing pressure on him at the compound."
+            },
+            {
+              "beat": "Mark questions the authenticity of the photographs, tactfully revealing his suspicion without confrontation; Kyan and Mark mutually sustain the illusion despite this tension."
+            },
+            {
+              "beat": "The previous operator, Aung, unexpectedly returns to the account, creating a complicated dynamic between him, Kyan, and Mark."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Act 2: Escalation and Entanglement",
+      "chapters": [
+        {
+          "title": "Jealousy and Vulnerability",
+          "scenes": [
+            {
+              "beat": "Kyan becomes jealous of Aung\u2019s earlier messages that built the relationship foundation, feeling inadequate and conflicted about his role."
+            },
+            {
+              "beat": "During a 3 AM conversation, Mark shares an intense philosophical reflection on Kierkegaard\u2019s concept of despair, while the scam dashboard flashes multiple CONVERSION OVERDUE alerts, amplifying operational stress."
+            },
+            {
+              "beat": "Supervisors introduce A/B testing on emotional vulnerability in messages, forcing Kyan to balance genuine connection with manipulative tactics under threat of punishment."
+            }
+          ]
+        },
+        {
+          "title": "Fractures and Consequences",
+          "scenes": [
+            {
+              "beat": "Kyan accidentally reveals a personal truth in a message, breaking persona guidelines; supervisors reprimand him, but Mark perceives it as intimacy, complicating their interactions."
+            },
+            {
+              "beat": "The compound experiences a violent raid and partial collapse, disrupting operations and scattering workers, including Kyan and Aung."
+            },
+            {
+              "beat": "Amid the chaos, Kyan and Aung confront their intertwined roles in the scam, deepening their internal conflicts about identity and deception."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Act 3: Reckoning and Revelation",
+      "chapters": [
+        {
+          "title": "Collapse and Confrontation",
+          "scenes": [
+            {
+              "beat": "Kyan escapes the compound and arranges a real-world meeting with Mark, driven by a desperate need to reconcile the fractured personas."
+            },
+            {
+              "beat": "Mark arrives, and they meet face-to-face; Mark realizes the messages he treasured most were written by Aung, not Kyan, confronting both men with the layered realities of their relationship."
+            },
+            {
+              "beat": "They part without resolution, each grappling with what was real and what was constructed, leaving their connection suspended between truth and fiction."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

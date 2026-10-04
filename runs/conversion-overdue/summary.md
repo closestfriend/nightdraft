@@ -1,0 +1,4 @@
+
+
+## Chapter 1: Assignment and Immersion
+Kyan is assigned to impersonate Aung in managing a romantic online account with an American client, Mark, struggling to maintain the facade amid strict corporate protocols and a dehumanizing work environment. As he follows scripted guidelines, Kyan grapples with the emotional toll and loss of identity inherent in his role, recognizing the relationship as a manufactured procedure rather than authentic connection. Defying protocol, he shares unscripted personal details with Mark, triggering system alerts and supervisor reprimands, which deepens the emotional complexity of their interaction while exposing Kyan to ongoing risks and disciplinary measures. The chapter ends with Kyan caught between his assigned role and a burgeoning, dangerous intimacy that challenges the boundaries of his scripted existence.

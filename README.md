@@ -19,11 +19,24 @@ python3 -m book compile my-novel    # -> runs/my-novel/book.md
 ```
 
 Point at a remote Ollama (e.g. wer) with `OLLAMA_HOST=wer:11434` or the `"host"`
-key in the run's `config.json`.
+key in the run's `config.json`. Or run against OpenRouter instead: set
+`"provider": "openrouter"` in `config.json` (with an optional `budget_usd` cap)
+and export `OPENROUTER_API_KEY`.
 
 Everything about a run lives in `runs/<slug>/` as plain files — edit `bible.json`
 or `outline.json` between nights to steer; the ledger (`ledger.jsonl`) is
 append-only truth and makes every run resumable after crash or power loss.
+
+## The drafts
+
+`runs/` contains real output, checked in deliberately — each run is a complete
+working directory: premise, outline, story bible, append-only ledger, and the
+compiled draft (`book.md`). The main premise is literary fiction about a
+pig-butchering operation on the Myanmar border, told from the inside: a
+trafficked operator inherits a romance persona whose American mark worked out
+long ago that the photos are stolen — and stayed anyway. Several runs draft the
+same premise with different prose models; `runs/_shootout/` holds single-scene
+comparisons across models.
 
 ## Tests
 

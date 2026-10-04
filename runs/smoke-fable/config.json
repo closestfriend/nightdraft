@@ -1,0 +1,14 @@
+{
+  "host": null,
+  "glue_model": "qwen3.5:4b",
+  "prose_model": "brie7b:latest",
+  "scene_words": 300,
+  "chapters": 2,
+  "scenes_per_chapter": 2,
+  "drift_every_chapters": 2,
+  "tool_call_cap": 4,
+  "num_ctx": 8192,
+  "prose_temperature": 0.9,
+  "glue_temperature": 0.2,
+  "request_timeout_s": 900
+}

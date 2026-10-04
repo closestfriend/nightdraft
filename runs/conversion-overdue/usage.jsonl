@@ -1,0 +1,13 @@
+{"ts": "2026-09-29T06:56:50", "model": "thinkingmachines/inkling-small", "prompt_tokens": 865, "completion_tokens": 863, "reasoning_tokens": 0, "cost": 0.00142485}
+{"ts": "2026-09-29T06:56:54", "model": "openai/gpt-4.1-mini", "prompt_tokens": 1306, "completion_tokens": 151, "reasoning_tokens": 0, "cost": 0.000764}
+{"ts": "2026-09-29T06:56:56", "model": "openai/gpt-4.1-mini", "prompt_tokens": 1828, "completion_tokens": 10, "reasoning_tokens": 0, "cost": 0.0007472}
+{"ts": "2026-09-29T06:57:01", "model": "openai/gpt-4.1-mini", "prompt_tokens": 1024, "completion_tokens": 434, "reasoning_tokens": 0, "cost": 0.001104}
+{"ts": "2026-09-29T06:57:08", "model": "thinkingmachines/inkling-small", "prompt_tokens": 1723, "completion_tokens": 1445, "reasoning_tokens": 0, "cost": 0.00246455}
+{"ts": "2026-09-29T06:57:11", "model": "openai/gpt-4.1-mini", "prompt_tokens": 2166, "completion_tokens": 117, "reasoning_tokens": 0, "cost": 0.0010536}
+{"ts": "2026-09-29T06:57:13", "model": "openai/gpt-4.1-mini", "prompt_tokens": 2604, "completion_tokens": 10, "reasoning_tokens": 0, "cost": 0.0010576}
+{"ts": "2026-09-29T06:57:20", "model": "openai/gpt-4.1-mini", "prompt_tokens": 1606, "completion_tokens": 431, "reasoning_tokens": 0, "cost": 0.001332}
+{"ts": "2026-09-29T06:57:32", "model": "thinkingmachines/inkling-small", "prompt_tokens": 1982, "completion_tokens": 1555, "reasoning_tokens": 0, "cost": 0.0025787}
+{"ts": "2026-09-29T06:57:47", "model": "openai/gpt-4.1-mini", "prompt_tokens": 2464, "completion_tokens": 344, "reasoning_tokens": 0, "cost": 0.001536}
+{"ts": "2026-09-29T06:57:51", "model": "openai/gpt-4.1-mini", "prompt_tokens": 4307, "completion_tokens": 10, "reasoning_tokens": 0, "cost": 0.0017388}
+{"ts": "2026-09-29T06:57:55", "model": "openai/gpt-4.1-mini", "prompt_tokens": 1715, "completion_tokens": 449, "reasoning_tokens": 0, "cost": 0.0014044}
+{"ts": "2026-09-29T06:57:59", "model": "openai/gpt-4.1-mini", "prompt_tokens": 271, "completion_tokens": 143, "reasoning_tokens": 0, "cost": 0.0003372}
